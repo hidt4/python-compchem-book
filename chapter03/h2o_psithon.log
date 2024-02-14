@@ -1,0 +1,3 @@
+2024-02-14:13:54:44,573 INFO     [psi4.driver.task_planner:283] PLANNING Atomic:  keywords={'function_kwargs': {}}
+2024-02-14:13:54:44,575 INFO     [psi4.driver.driver:524] Compute energy(): method=hf, basis=sto-3g, molecule=h2o, nre=9.062772525153836
+2024-02-14:13:54:45,978 INFO     [psi4.driver.driver:527] Return energy(): -74.96172843127441
