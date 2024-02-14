@@ -1,0 +1,254 @@
+2023-07-13:14:10:12,73 INFO     [psi4.driver.task_planner:283] PLANNING Atomic:  keywords={'function_kwargs': {}}
+2023-07-13:14:10:12,75 INFO     [psi4.driver.driver:524] Compute energy(): method=hf, basis=6-31+g(d,p), molecule=default, nre=33.745332354312765
+2023-07-13:14:10:12,425 INFO     [psi4.driver.driver:527] Return energy(): -78.04260063577543
+2023-07-13:14:10:12,443 INFO     [psi4.driver.task_planner:283] PLANNING Atomic:  keywords={'function_kwargs': {}}
+2023-07-13:14:10:12,445 INFO     [psi4.driver.driver:524] Compute energy(): method=hf, basis=6-311+g(2d,p), molecule=default, nre=33.745332354312765
+2023-07-13:14:10:12,907 INFO     [psi4.driver.driver:527] Return energy(): -78.05893602054029
+,
+    F. A. Evangelista, J. M. Turney, T. D. Crawford, C. D. Sherrill,
+    J. Chem. Phys. 152(18) 184108 (2020). https://doi.org/10.1063/5.0006002
+
+                            Additional Code Authors
+    E. T. Seidl, C. L. Janssen, E. F. Valeev, M. L. Leininger,
+    J. F. Gonthier, R. M. Richard, H. R. McAlexander, M. Saitow, X. Wang,
+    P. Verma, M. H. Lechner, A. Jiang, S. Behnle, A. G. Heide,
+    M. F. Herbst, and D. L. Poole
+
+             Previous Authors, Complete List of Code Contributors,
+                       and Citations for Specific Modules
+    https://github.com/psi4/psi4/blob/master/codemeta.json
+    https://github.com/psi4/psi4/graphs/contributors
+    http://psicode.org/psi4manual/master/introduction.html#citing-psifour
+
+    -----------------------------------------------------------------------
+
+
+    Psi4 started on: Thursday, 13 July 2023 02:10PM
+
+    Process ID: 56065
+    Host:       Hidetoshis-Mac-Studio.local
+    PSIDATADIR: /Users/hidetoshi/.pyenv/versions/mambaforge/envs/psi4-v18/share/psi4
+    Memory:     29.8 GiB
+    Threads:    14
+    
+Scratch directory: /tmp/
+   => Libint2 <=
+
+    Primary   basis highest AM E, G, H:  5, 4, 3
+    Auxiliary basis highest AM E, G, H:  6, 5, 4
+    Onebody   basis highest AM E, G, H:  6, 5, 4
+    Solid Harmonics ordering:            gaussian
+
+*** tstart() called on Hidetoshis-Mac-Studio.local
+*** at Thu Jul 13 14:10:12 2023
+
+   => Loading Basis Set <=
+
+    Name: 6-31+G(D,P)
+    Role: ORBITAL
+    Keyword: BASIS
+    atoms 1-2 entry C          line   123 file /Users/hidetoshi/.pyenv/versions/mambaforge/envs/psi4-v18/share/psi4/basis/6-31pg_d_p_.gbs 
+    atoms 3-6 entry H          line    46 file /Users/hidetoshi/.pyenv/versions/mambaforge/envs/psi4-v18/share/psi4/basis/6-31pg_d_p_.gbs 
+
+
+         ---------------------------------------------------------
+                                   SCF
+               by Justin Turney, Rob Parrish, Andy Simmonett
+                          and Daniel G. A. Smith
+                              RHF Reference
+                       14 Threads,  30517 MiB Core
+         ---------------------------------------------------------
+
+  ==> Geometry <==
+
+    Molecular point group: c1
+    Full point group: C1
+
+    Geometry (in Angstrom), charge = 0, multiplicity = 1:
+
+       Center              X                  Y                   Z               Mass       
+    ------------   -----------------  -----------------  -----------------  -----------------
+         C           -0.653015200001     0.000007233508    -0.000000664578    12.000000000000
+         C            0.653015199980    -0.000007233564     0.000003276018    12.000000000000
+         H           -1.229207658478     0.915809959624     0.000002390850     1.007825032230
+         H           -1.229228023989    -0.915782666324    -0.000031093690     1.007825032230
+         H            1.229207658637    -0.915809960441    -0.000017654877     1.007825032230
+         H            1.229228024083     0.915782667819     0.000015263742     1.007825032230
+
+  Running in c1 symmetry.
+
+  Rotational constants: A =      4.98602  B =      1.03260  C =      0.85544 [cm^-1]
+  Rotational constants: A = 149476.96961  B =  30956.43320  C =  25645.32816 [MHz]
+  Nuclear repulsion =   33.745332354312765
+
+  Charge       = 0
+  Multiplicity = 1
+  Electrons    = 16
+  Nalpha       = 8
+  Nbeta        = 8
+
+  ==> Algorithm <==
+
+  SCF Algorithm Type is DF.
+  DIIS enabled.
+  MOM disabled.
+  Fractional occupation disabled.
+  Guess Type is SAD.
+  Energy threshold   = 1.00e-06
+  Density threshold  = 1.00e-06
+  Integral threshold = 1.00e-12
+
+  ==> Primary Basis <==
+
+  Basis Set: 6-31+G(D,P)
+    Blend: 6-31+G(D,P)
+    Number of shells: 28
+    Number of basis functions: 58
+    Number of Cartesian functions: 58
+    Spherical Harmonics?: false
+    Max angular momentum: 2
+
+   => Loading Basis Set <=
+
+    Name: (6-31+G(D,P) AUX)
+    Role: JKFIT
+    Keyword: DF_BASIS_SCF
+    atoms 1-2 entry C          line   194 file /Users/hidetoshi/.pyenv/versions/mambaforge/envs/psi4-v18/share/psi4/basis/heavy-aug-cc-pvdz-jkfit.gbs 
+    atoms 3-6 entry H          line   116 file /Users/hidetoshi/.pyenv/versions/mambaforge/envs/psi4-v18/share/psi4/basis/heavy-aug-cc-pvdz-jkfit.gbs 
+
+  ==> Integral Setup <==
+
+  DFHelper Memory: AOs need 0.009 GiB; user supplied 22.352 GiB. 
+  Using in-core AOs.
+
+  ==> MemDFJK: Density-Fitted J/K Matrices <==
+
+    J tasked:                   Yes
+    K tasked:                   Yes
+    wK tasked:                   No
+    OpenMP threads:              14
+    Memory [MiB]:             22888
+    Algorithm:                 Core
+    Schwarz Cutoff:           1E-12
+    Mask sparsity (%):       0.0000
+    Fitting Condition:        1E-10
+
+   => Auxiliary Basis Set <=
+
+  Basis Set: (6-31+G(D,P) AUX)
+    Blend: HEAVY-AUG-CC-PVDZ-JKFIT
+    Number of shells: 92
+    Number of basis functions: 302
+    Number of Cartesian functions: 302
+    Spherical Harmonics?: false
+    Max angular momentum: 3
+
+  Minimum eigenvalue in the overlap matrix is 1.9285523340E-04.
+  Reciprocal condition number of the overlap matrix is 2.5824416216E-05.
+    Using symmetric orthogonalization.
+
+  ==> Pre-Iterations <==
+
+  SCF Guess: Superposition of Atomic Densities via on-the-fly atomic UHF (no occupation information).
+
+   -------------------------
+    Irrep   Nso     Nmo    
+   -------------------------
+     A         58      58 
+   -------------------------
+    Total      58      58
+   -------------------------
+
+  ==> Iterations <==
+
+                           Total Energy        Delta E     RMS |[F,P]|
+
+   @DF-RHF iter SAD:   -77.30016919030737   -7.73002e+01   0.00000e+00 
+   @DF-RHF iter   1:   -77.97558962000203   -6.75420e-01   5.79670e-03 ADIIS/DIIS
+   @DF-RHF iter   2:   -78.03291063444718   -5.73210e-02   2.33144e-03 ADIIS/DIIS
+   @DF-RHF iter   3:   -78.04224024833864   -9.32961e-03   3.27855e-04 ADIIS/DIIS
+   @DF-RHF iter   4:   -78.04259617763668   -3.55929e-04   3.38060e-05 DIIS
+   @DF-RHF iter   5:   -78.04260056527173   -4.38764e-06   3.97677e-06 DIIS
+   @DF-RHF iter   6:   -78.04260063577543   -7.05037e-08   7.05123e-07 DIIS
+  Energy and wave function converged.
+
+
+  ==> Post-Iterations <==
+
+    Orbital Energies [Eh]
+    ---------------------
+
+    Doubly Occupied:                                                      
+
+       1A    -11.232813     2A    -11.230895     3A     -1.043459  
+       4A     -0.792734     5A     -0.644666     6A     -0.595558  
+       7A     -0.501883     8A     -0.382179  
+
+    Virtual:                                                              
+
+       9A      0.091739    10A      0.096065    11A      0.108335  
+      12A      0.117417    13A      0.136103    14A      0.144249  
+      15A      0.159428    16A      0.228077    17A      0.244813  
+      18A      0.324634    19A      0.339720    20A      0.398211  
+      21A      0.502922    22A      0.524799    23A      0.751007  
+      24A      0.857540    25A      0.899048    26A      0.975065  
+      27A      1.008673    28A      1.046037    29A      1.126669  
+      30A      1.183753    31A      1.220174    32A      1.256503  
+      33A      1.411582    34A      1.455194    35A      1.641668  
+      36A      1.664456    37A      1.809572    38A      2.140108  
+      39A      2.243745    40A      2.309492    41A      2.354403  
+      42A      2.385097    43A      2.457383    44A      2.534790  
+      45A      2.687995    46A      2.753006    47A      2.877541  
+      48A      2.972825    49A      3.015576    50A      3.076991  
+      51A      3.109019    52A      3.419128    53A      3.543869  
+      54A      3.735775    55A      3.865489    56A      4.198249  
+      57A      4.663941    58A      4.944701  
+
+    Final Occupation by Irrep:
+              A 
+    DOCC [     8 ]
+    NA   [     8 ]
+    NB   [     8 ]
+
+  @DF-RHF Final Energy:   -78.04260063577543
+
+   => Energetics <=
+
+    Nuclear Repulsion Energy =             33.7453323543127652
+    One-Electron Energy =                -170.7274715103636709
+    Two-Electron Energy =                  58.9395385202754554
+    Total Energy =                        -78.0426006357754432
+
+Computation Completed
+
+
+Properties will be evaluated at   0.000000,   0.000000,   0.000000 [a0]
+
+Properties computed using the SCF density matrix
+
+
+ Multipole Moments:
+
+ ------------------------------------------------------------------------------------
+     Multipole            Electronic (a.u.)      Nuclear  (a.u.)        Total (a.u.)
+ ------------------------------------------------------------------------------------
+
+ L = 1.  Multiply by 2.5417464519 to convert [e a0] to [Debye]
+ Dipole X            :         -0.0000000            0.0000000           -0.0000000
+ Dipole Y            :         -0.0000000            0.0000000            0.0000000
+ Dipole Z            :          0.0000172           -0.0000291           -0.0000120
+ Magnitude           :                                                    0.0000120
+
+ ------------------------------------------------------------------------------------
+
+*** tstop() called on Hidetoshis-Mac-Studio.local at Thu Jul 13 14:10:12 2023
+Module time:
+	user time   =       0.47 seconds =       0.01 minutes
+	system time =       0.41 seconds =       0.01 minutes
+	total time  =          0 seconds =       0.00 minutes
+Total time:
+	user time   =       8.24 seconds =       0.14 minutes
+	system time =       5.37 seconds =       0.09 minutes
+	total time  =          6 seconds =       0.10 minutes
+FCHKWriter: !WARNING! method 'HF'' renamed to label 'HF'.
+FCHKWriter: Writing hf_6-31+g(d,p).fchk with label ' SCF Density'.

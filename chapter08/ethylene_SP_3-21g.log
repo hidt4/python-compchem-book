@@ -1,0 +1,239 @@
+2023-07-13:14:10:11,742 INFO     [psi4.driver.task_planner:283] PLANNING Atomic:  keywords={'function_kwargs': {}}
+2023-07-13:14:10:11,743 INFO     [psi4.driver.driver:524] Compute energy(): method=hf, basis=3-21g, molecule=default, nre=33.745332354312765
+2023-07-13:14:10:12,56 INFO     [psi4.driver.driver:527] Return energy(): -77.60069036918074
+2023-07-13:14:10:12,73 INFO     [psi4.driver.task_planner:283] PLANNING Atomic:  keywords={'function_kwargs': {}}
+2023-07-13:14:10:12,75 INFO     [psi4.driver.driver:524] Compute energy(): method=hf, basis=6-31+g(d,p), molecule=default, nre=33.745332354312765
+2023-07-13:14:10:12,425 INFO     [psi4.driver.driver:527] Return energy(): -78.04260063577543
+2023-07-13:14:10:12,443 INFO     [psi4.driver.task_planner:283] PLANNING Atomic:  keywords={'function_kwargs': {}}
+2023-07-13:14:10:12,445 INFO     [psi4.driver.driver:524] Compute energy(): method=hf, basis=6-311+g(2d,p), molecule=default, nre=33.745332354312765
+2023-07-13:14:10:12,907 INFO     [psi4.driver.driver:527] Return energy(): -78.05893602054029
+, M. H. Lechner, A. Jiang, S. Behnle, A. G. Heide,
+    M. F. Herbst, and D. L. Poole
+
+             Previous Authors, Complete List of Code Contributors,
+                       and Citations for Specific Modules
+    https://github.com/psi4/psi4/blob/master/codemeta.json
+    https://github.com/psi4/psi4/graphs/contributors
+    http://psicode.org/psi4manual/master/introduction.html#citing-psifour
+
+    -----------------------------------------------------------------------
+
+
+    Psi4 started on: Thursday, 13 July 2023 02:10PM
+
+    Process ID: 56065
+    Host:       Hidetoshis-Mac-Studio.local
+    PSIDATADIR: /Users/hidetoshi/.pyenv/versions/mambaforge/envs/psi4-v18/share/psi4
+    Memory:     29.8 GiB
+    Threads:    14
+    
+Scratch directory: /tmp/
+   => Libint2 <=
+
+    Primary   basis highest AM E, G, H:  5, 4, 3
+    Auxiliary basis highest AM E, G, H:  6, 5, 4
+    Onebody   basis highest AM E, G, H:  6, 5, 4
+    Solid Harmonics ordering:            gaussian
+
+*** tstart() called on Hidetoshis-Mac-Studio.local
+*** at Thu Jul 13 14:10:11 2023
+
+   => Loading Basis Set <=
+
+    Name: 3-21G
+    Role: ORBITAL
+    Keyword: BASIS
+    atoms 1-2 entry C          line    68 file /Users/hidetoshi/.pyenv/versions/mambaforge/envs/psi4-v18/share/psi4/basis/3-21g.gbs 
+    atoms 3-6 entry H          line    21 file /Users/hidetoshi/.pyenv/versions/mambaforge/envs/psi4-v18/share/psi4/basis/3-21g.gbs 
+
+
+         ---------------------------------------------------------
+                                   SCF
+               by Justin Turney, Rob Parrish, Andy Simmonett
+                          and Daniel G. A. Smith
+                              RHF Reference
+                       14 Threads,  30517 MiB Core
+         ---------------------------------------------------------
+
+  ==> Geometry <==
+
+    Molecular point group: c1
+    Full point group: C1
+
+    Geometry (in Angstrom), charge = 0, multiplicity = 1:
+
+       Center              X                  Y                   Z               Mass       
+    ------------   -----------------  -----------------  -----------------  -----------------
+         C           -0.653015200001     0.000007233508    -0.000000664578    12.000000000000
+         C            0.653015199980    -0.000007233564     0.000003276018    12.000000000000
+         H           -1.229207658478     0.915809959624     0.000002390850     1.007825032230
+         H           -1.229228023989    -0.915782666324    -0.000031093690     1.007825032230
+         H            1.229207658637    -0.915809960441    -0.000017654877     1.007825032230
+         H            1.229228024083     0.915782667819     0.000015263742     1.007825032230
+
+  Running in c1 symmetry.
+
+  Rotational constants: A =      4.98602  B =      1.03260  C =      0.85544 [cm^-1]
+  Rotational constants: A = 149476.96961  B =  30956.43320  C =  25645.32816 [MHz]
+  Nuclear repulsion =   33.745332354312765
+
+  Charge       = 0
+  Multiplicity = 1
+  Electrons    = 16
+  Nalpha       = 8
+  Nbeta        = 8
+
+  ==> Algorithm <==
+
+  SCF Algorithm Type is DF.
+  DIIS enabled.
+  MOM disabled.
+  Fractional occupation disabled.
+  Guess Type is SAD.
+  Energy threshold   = 1.00e-06
+  Density threshold  = 1.00e-06
+  Integral threshold = 1.00e-12
+
+  ==> Primary Basis <==
+
+  Basis Set: 3-21G
+    Blend: 3-21G
+    Number of shells: 18
+    Number of basis functions: 26
+    Number of Cartesian functions: 26
+    Spherical Harmonics?: false
+    Max angular momentum: 1
+
+   => Loading Basis Set <=
+
+    Name: (3-21G AUX)
+    Role: JKFIT
+    Keyword: DF_BASIS_SCF
+    atoms 1-2 entry C          line   198 file /Users/hidetoshi/.pyenv/versions/mambaforge/envs/psi4-v18/share/psi4/basis/def2-universal-jkfit.gbs 
+    atoms 3-6 entry H          line    18 file /Users/hidetoshi/.pyenv/versions/mambaforge/envs/psi4-v18/share/psi4/basis/def2-universal-jkfit.gbs 
+
+  ==> Integral Setup <==
+
+  DFHelper Memory: AOs need 0.002 GiB; user supplied 22.352 GiB. 
+  Using in-core AOs.
+
+  ==> MemDFJK: Density-Fitted J/K Matrices <==
+
+    J tasked:                   Yes
+    K tasked:                   Yes
+    wK tasked:                   No
+    OpenMP threads:              14
+    Memory [MiB]:             22888
+    Algorithm:                 Core
+    Schwarz Cutoff:           1E-12
+    Mask sparsity (%):       0.0000
+    Fitting Condition:        1E-10
+
+   => Auxiliary Basis Set <=
+
+  Basis Set: (3-21G AUX)
+    Blend: DEF2-UNIVERSAL-JKFIT
+    Number of shells: 74
+    Number of basis functions: 258
+    Number of Cartesian functions: 258
+    Spherical Harmonics?: false
+    Max angular momentum: 4
+
+  Minimum eigenvalue in the overlap matrix is 1.4694679645E-02.
+  Reciprocal condition number of the overlap matrix is 3.6896634980E-03.
+    Using symmetric orthogonalization.
+
+  ==> Pre-Iterations <==
+
+  SCF Guess: Superposition of Atomic Densities via on-the-fly atomic UHF (no occupation information).
+
+   -------------------------
+    Irrep   Nso     Nmo    
+   -------------------------
+     A         26      26 
+   -------------------------
+    Total      26      26
+   -------------------------
+
+  ==> Iterations <==
+
+                           Total Energy        Delta E     RMS |[F,P]|
+
+   @DF-RHF iter SAD:   -76.93404683058633   -7.69340e+01   0.00000e+00 
+   @DF-RHF iter   1:   -77.57045935009049   -6.36413e-01   8.57582e-03 ADIIS/DIIS
+   @DF-RHF iter   2:   -77.59799005164891   -2.75307e-02   2.73620e-03 ADIIS/DIIS
+   @DF-RHF iter   3:   -77.60056091343895   -2.57086e-03   4.62542e-04 ADIIS/DIIS
+   @DF-RHF iter   4:   -77.60068895357648   -1.28040e-04   4.58073e-05 DIIS
+   @DF-RHF iter   5:   -77.60069036072737   -1.40715e-06   3.50618e-06 DIIS
+   @DF-RHF iter   6:   -77.60069036918074   -8.45337e-09   6.10163e-07 DIIS
+  Energy and wave function converged.
+
+
+  ==> Post-Iterations <==
+
+    Orbital Energies [Eh]
+    ---------------------
+
+    Doubly Occupied:                                                      
+
+       1A    -11.167054     2A    -11.166768     3A     -1.040015  
+       4A     -0.785125     5A     -0.644233     6A     -0.592386  
+       7A     -0.494260     8A     -0.382226  
+
+    Virtual:                                                              
+
+       9A      0.188780    10A      0.297394    11A      0.309026  
+      12A      0.340835    13A      0.439446    14A      0.549235  
+      15A      0.866919    16A      0.930659    17A      0.988244  
+      18A      1.080994    19A      1.123502    20A      1.127775  
+      21A      1.319981    22A      1.347038    23A      1.409160  
+      24A      1.645279    25A      1.655259    26A      1.979448  
+
+    Final Occupation by Irrep:
+              A 
+    DOCC [     8 ]
+    NA   [     8 ]
+    NB   [     8 ]
+
+  @DF-RHF Final Energy:   -77.60069036918074
+
+   => Energetics <=
+
+    Nuclear Repulsion Energy =             33.7453323543127652
+    One-Electron Energy =                -170.1479101558613252
+    Two-Electron Energy =                  58.8018874323678133
+    Total Energy =                        -77.6006903691807395
+
+Computation Completed
+
+
+Properties will be evaluated at   0.000000,   0.000000,   0.000000 [a0]
+
+Properties computed using the SCF density matrix
+
+
+ Multipole Moments:
+
+ ------------------------------------------------------------------------------------
+     Multipole            Electronic (a.u.)      Nuclear  (a.u.)        Total (a.u.)
+ ------------------------------------------------------------------------------------
+
+ L = 1.  Multiply by 2.5417464519 to convert [e a0] to [Debye]
+ Dipole X            :         -0.0000000            0.0000000           -0.0000000
+ Dipole Y            :         -0.0000000            0.0000000            0.0000000
+ Dipole Z            :          0.0000174           -0.0000291           -0.0000117
+ Magnitude           :                                                    0.0000117
+
+ ------------------------------------------------------------------------------------
+
+*** tstop() called on Hidetoshis-Mac-Studio.local at Thu Jul 13 14:10:12 2023
+Module time:
+	user time   =       0.42 seconds =       0.01 minutes
+	system time =       0.25 seconds =       0.00 minutes
+	total time  =          1 seconds =       0.02 minutes
+Total time:
+	user time   =       7.74 seconds =       0.13 minutes
+	system time =       4.96 seconds =       0.08 minutes
+	total time  =          6 seconds =       0.10 minutes
+FCHKWriter: !WARNING! method 'HF'' renamed to label 'HF'.
+FCHKWriter: Writing hf_3-21g.fchk with label ' SCF Density'.
