@@ -1,0 +1,2334 @@
+2023-07-08:15:12:32,360 INFO     [psi4.optking.optwrapper:214] Creating a UserComputer
+2023-07-08:15:12:32,360 INFO     [psi4.optking.optwrapper:222] 
+    			-----------------------------------------
+
+    			 OPTKING 3.0: for geometry optimizations 
+
+    			     By R.A. King, Bethel University     
+
+    			        with contributions from          
+
+    			    A.V. Copan, J. Cayton, A. Heide      
+
+    			-----------------------------------------
+
+    
+2023-07-08:15:12:32,360 INFO     [psi4.optking.optwrapper:238] 
+		 -- Optimization Parameters --
+	accept_symmetry_breaking       =           False
+	alg_geom_maxiter               =              50
+	bt_dx_conv                     =           1e-07
+	bt_dx_rms_change_conv          =           1e-12
+	bt_max_iter                    =              25
+	cart_hess_read                 =           False
+	consecutive_backsteps_allowed  =               0
+	conv_max_DE                    =           1e-06
+	conv_max_disp                  =          0.0012
+	conv_max_force                 =          0.0003
+	conv_rms_disp                  =              -1
+	conv_rms_force                 =              -1
+	covalent_connect               =             1.3
+	dynamic_level                  =               0
+	dynamic_level_max              =               0
+	ensure_bt_convergence          =           False
+	ext_force_bend                 =              []
+	ext_force_cartesian            =              []
+	ext_force_dihedral             =              []
+	ext_force_distance             =              []
+	ext_force_oofp                 =              []
+	fix_val_near_pi                =            1.57
+	flexible_g_convergence         =           False
+	frag_mode                      =          SINGLE
+	frag_ref_atoms                 =   
+Scratch directory: /tmp/
+gradient() will perform analytic gradient computation.
+   => Libint2 <=
+
+    Primary   basis highest AM E, G, H:  5, 4, 3
+    Auxiliary basis highest AM E, G, H:  6, 5, 4
+    Onebody   basis highest AM E, G, H:  6, 5, 4
+    Solid Harmonics ordering:            gaussian
+
+*** tstart() called on Hidetoshis-Mac-Studio.local
+*** at Sat Jul  8 15:12:32 2023
+
+   => Loading Basis Set <=
+
+    Name: STO-3G
+    Role: ORBITAL
+    Keyword: BASIS
+    atoms 1   entry C          line    61 file /Users/hidetoshi/.pyenv/versions/mambaforge/envs/psi4-v18/share/psi4/basis/sto-3g.gbs 
+    atoms 2   entry O          line    81 file /Users/hidetoshi/.pyenv/versions/mambaforge/envs/psi4-v18/share/psi4/basis/sto-3g.gbs 
+    atoms 3-4 entry H          line    19 file /Users/hidetoshi/.pyenv/versions/mambaforge/envs/psi4-v18/share/psi4/basis/sto-3g.gbs 
+
+
+         ---------------------------------------------------------
+                                   SCF
+               by Justin Turney, Rob Parrish, Andy Simmonett
+                          and Daniel G. A. Smith
+                              RHF Reference
+                        1 Threads,    500 MiB Core
+         ---------------------------------------------------------
+
+  ==> Geometry <==
+
+    Molecular point group: cs
+    Full point group: Cs
+
+    Geometry (in Angstrom), charge = 0, multiplicity = 1:
+
+       Center              X                  Y                   Z               Mass       
+    ------------   -----------------  -----------------  -----------------  -----------------
+         C            0.000001309711     0.614359433514     0.000000000000    12.000000000000
+         O            0.000001309711    -0.612957566486     0.000000000000    15.994914619570
+         H           -0.000018190289     1.206504433514     0.939404000202     1.007825032230
+         H           -0.000018190289     1.206504433514    -0.939404000202     1.007825032230
+
+  Running in cs symmetry.
+
+  Rotational constants: A =      9.47712  B =      1.25123  C =      1.10530 [cm^-1]
+  Rotational constants: A = 284117.02079  B =  37510.78682  C =  33135.98124 [MHz]
+  Nuclear repulsion =   30.830974642583048
+
+  Charge       = 0
+  Multiplicity = 1
+  Electrons    = 16
+  Nalpha       = 8
+  Nbeta        = 8
+
+  ==> Algorithm <==
+
+  SCF Algorithm Type is DF.
+  DIIS enabled.
+  MOM disabled.
+  Fractional occupation disabled.
+  Guess Type is SAD.
+  Energy threshold   = 1.00e-08
+  Density threshold  = 1.00e-08
+  Integral threshold = 1.00e-12
+
+  ==> Primary Basis <==
+
+  Basis Set: STO-3G
+    Blend: STO-3G
+    Number of shells: 8
+    Number of basis functions: 12
+    Number of Cartesian functions: 12
+    Spherical Harmonics?: true
+    Max angular momentum: 1
+
+   => Loading Basis Set <=
+
+    Name: (STO-3G AUX)
+    Role: JKFIT
+    Keyword: DF_BASIS_SCF
+    atoms 1   entry C          line   198 file /Users/hidetoshi/.pyenv/versions/mambaforge/envs/psi4-v18/share/psi4/basis/def2-universal-jkfit.gbs 
+    atoms 2   entry O          line   318 file /Users/hidetoshi/.pyenv/versions/mambaforge/envs/psi4-v18/share/psi4/basis/def2-universal-jkfit.gbs 
+    atoms 3-4 entry H          line    18 file /Users/hidetoshi/.pyenv/versions/mambaforge/envs/psi4-v18/share/psi4/basis/def2-universal-jkfit.gbs 
+
+  ==> Integral Setup <==
+
+  DFHelper Memory: AOs need 0.000 GiB; user supplied 0.366 GiB. 
+  Using in-core AOs.
+
+  ==> MemDFJK: Density-Fitted J/K Matrices <==
+
+    J tasked:                   Yes
+    K tasked:                   Yes
+    wK tasked:                   No
+    OpenMP threads:               1
+    Memory [MiB]:               375
+    Algorithm:                 Core
+    Schwarz Cutoff:           1E-12
+    Mask sparsity (%):       0.0000
+    Fitting Condition:        1E-10
+
+   => Auxiliary Basis Set <=
+
+  Basis Set: (STO-3G AUX)
+    Blend: DEF2-UNIVERSAL-JKFIT
+    Number of shells: 62
+    Number of basis functions: 188
+    Number of Cartesian functions: 222
+    Spherical Harmonics?: true
+    Max angular momentum: 4
+
+  Minimum eigenvalue in the overlap matrix is 2.4165568842E-01.
+  Reciprocal condition number of the overlap matrix is 1.2433810887E-01.
+    Using symmetric orthogonalization.
+
+  ==> Pre-Iterations <==
+
+  SCF Guess: Superposition of Atomic Densities via on-the-fly atomic UHF (no occupation information).
+
+   -------------------------
+    Irrep   Nso     Nmo    
+   -------------------------
+     A'         9       9 
+     A"         3       3 
+   -------------------------
+    Total      12      12
+   -------------------------
+
+  ==> Iterations <==
+
+                           Total Energy        Delta E     RMS |[F,P]|
+
+   @DF-RHF iter SAD:  -110.90914135430444   -1.10909e+02   0.00000e+00 
+   @DF-RHF iter   1:  -112.22872330739465   -1.31958e+00   4.40201e-02 DIIS/ADIIS
+   @DF-RHF iter   2:  -112.30115128753802   -7.24280e-02   3.37342e-02 DIIS/ADIIS
+   @DF-RHF iter   3:  -112.35257212365133   -5.14208e-02   3.48487e-03 DIIS/ADIIS
+   @DF-RHF iter   4:  -112.35401575131984   -1.44363e-03   9.25968e-04 DIIS/ADIIS
+   @DF-RHF iter   5:  -112.35412294912220   -1.07198e-04   3.11248e-04 DIIS/ADIIS
+   @DF-RHF iter   6:  -112.35413427640846   -1.13273e-05   3.15262e-05 DIIS
+   @DF-RHF iter   7:  -112.35413437335077   -9.69423e-08  2023-07-08:15:12:33,1 INFO     [psi4.driver.driver:640] Return gradient(): -112.35413437387294
+2023-07-08:15:12:33,1 INFO     [psi4.driver.driver:641] [[ 0.00000495  0.01628029  0.00000000]
+ [-0.00000155 -0.02211268  0.00000000]
+ [-0.00000170  0.00291620  0.00782817]
+ [-0.00000170  0.00291620 -0.00782817]]
+2023-07-08:15:12:33,4 INFO     [psi4.optking.molsys:874] Projected (PHP) Hessian matrix
+	   0.922135   0.000000   0.000000   0.000000   0.000000   0.000000   0.000000
+	   0.000000   0.000000
+	   0.000000   0.325516   0.000000   0.000000   0.000000   0.000000   0.000000
+	   0.000000   0.000000
+	   0.000000   0.000000   0.325516   0.000000   0.000000   0.000000   0.000000
+	   0.000000   0.000000
+	   0.000000   0.000000   0.000000   0.160000   0.000000   0.000000   0.000000
+	   0.000000   0.000000
+	   0.000000   0.000000   0.000000   0.000000   0.160000   0.000000   0.000000
+	   0.000000   0.000000
+	   0.000000   0.000000   0.000000   0.000000   0.000000   0.160000   0.000000
+	   0.000000   0.000000
+	   0.000000   0.000000   0.000000   0.000000   0.000000   0.000000   0.001000
+	   0.000000   0.000000
+	   0.000000   0.000000   0.000000   0.000000   0.000000   0.000000   0.000000
+	   0.001000   0.000000
+	   0.000000   0.000000   0.000000   0.000000   0.000000   0.000000   0.000000
+	   0.000000   0.001000
+
+2023-07-08:15:12:33,5 INFO     [psi4.optking.opt_helper:168] 
+	         Geometry (au)                                       Gradient (au)
+   0.0000024750   1.1609710719   0.0000000000		   0.0000049527   0.0162802858   0.0000000000
+   0.0000024750  -1.1583219272   0.0000000000		  -0.0000015494  -0.0221126797   0.0000000000
+  -0.0000343747   2.2799629485   1.7752162815		  -0.0000017017   0.0029161969   0.0078281692
+  -0.0000343747   2.2799629485  -1.7752162815		  -0.0000017017   0.0029161969  -0.0078281692
+
+2023-07-08:15:12:33,5 INFO     [psi4.optking.stepAlgorithms:750] 	Using RFO solution 1.
+2023-07-08:15:12:33,6 INFO     [psi4.optking.displace:73] 	Determining Cartesian step for fragment 1.
+2023-07-08:15:12:33,9 INFO     [psi4.optking.displace:378] 	Successfully converged to displaced geometry.
+2023-07-08:15:12:33,9 INFO     [psi4.optking.displace:379] 	RMS(dx):  4.010e-09 	Max(dx):  9.821e-09 	RMS(dq):  1.759e-06
+2023-07-08:15:12:33,10 INFO     [psi4.optking.displace:132] 
+
+	        --- Internal Coordinate Step in ANG or DEG, aJ/ANG or AJ/DEG ---
+	-------------------------------------------------------------------------------
+	           Coordinate      Previous         Force          Change          New 
+	           ----------      --------        ------          ------        ------
+	               R(1,2)       1.22732       -0.18218       -0.01268       1.21464
+	               R(1,3)       1.11046       -0.06737       -0.01325       1.09720
+	               R(1,4)       1.11046       -0.06737       -0.01325       1.09720
+	             B(2,1,3)     122.22492        0.00009        0.42502     122.64994
+	             B(2,1,4)     122.22492        0.00009        0.42502     122.64994
+	             B(3,1,4)     115.55016       -0.00018       -0.85006     114.70011
+	           O(2,1,3,4)       0.00189       -0.00000       -0.03088      -0.02899
+	           O(3,1,2,4)      -0.00201        0.00000        0.03330       0.03129
+	           O(4,1,2,3)       0.00201       -0.00000       -0.03330      -0.03129
+	-------------------------------------------------------------------------------
+
+2023-07-08:15:12:33,10 INFO     [psi4.optking.stepAlgorithms:96] 	|target step| :    0.0464696261
+2023-07-08:15:12:33,10 INFO     [psi4.optking.stepAlgorithms:97] 	gradient     :   -0.0213569343
+2023-07-08:15:12:33,10 INFO     [psi4.optking.stepAlgorithms:98] 	hessian      :    0.4585966638
+2023-07-08:15:12:33,10 INFO     [psi4.optking.stepAlgorithms:177] 	Norm of achieved step-size    0.0464696261
+2023-07-08:15:12:33,10 INFO     [psi4.optking.stepAlgorithms:179] 	Norm of achieved step-size (cart):    0.0466115845
+2023-07-08:15:12:33,11 INFO     [psi4.optking.opt_helper:151] Molsys:
+
+	                            ===> Fragment 1 <== 
+
+	 Z (Atomic Numbers)          Masses                          Geom                  
+	       6.000000            12.000000         -0.00030154  1.15516954 -0.00000000   
+	       8.000000            15.994915          0.00010129 -1.14016932 -0.00000000   
+	       1.000000             1.007825          0.00006823  2.27378741  1.74577934   
+	       1.000000             1.007825          0.00006823  2.27378741 -1.74577934   
+
+	 - Coordinate -           - BOHR/RAD -       - ANG/DEG -
+	 R(1,2)           =         2.295339           1.214641
+	 R(1,3)           =         2.073415           1.097204
+	 R(1,4)           =         2.073415           1.097204
+	 B(2,1,3)         =         2.140645         122.649941
+	 B(2,1,4)         =         2.140645         122.649941
+	 B(3,1,4)         =         2.001895         114.700108
+	 O(2,1,3,4)       =        -0.000506          -0.028995
+	 O(3,1,2,4)       =         0.000546           0.031286
+	 O(4,1,2,3)       =        -0.000546          -0.031286
+
+2023-07-08:15:12:33,11 INFO     [psi4.optking.convcheck:71] Performing convergence check.
+2023-07-08:15:12:33,11 INFO     [psi4.optking.convcheck:263] 
+	                                 ==> Convergence Check <==                                  
+    
+	Measures of convergence in internal coordinates in au.
+    
+	Criteria marked as inactive (o), active & met (*), and active & unmet ( ).
+
+	----------------------------------------------------------------------------------------------
+	   Step    Total Energy     Delta E     Max Force     RMS Force      Max Disp      RMS Disp   
+	----------------------------------------------------------------------------------------------
+	  Convergence Criteria     1.00e-06 *    3.00e-04 *             o    1.20e-03 *             o
+	----------------------------------------------------------------------------------------------
+	     1    -112.35413437   -1.12e+02      2.21e-02      8.38e-03 o    2.50e-02      1.55e-02 o  ~
+	----------------------------------------------------------------------------------------------
+
+
+2023-07-08:15:12:33,11 INFO     [psi4.optking.stepAlgorithms:266] 	Convergence check returned False
+2023-07-08:15:12:33,25 INFO     [psi4.driver.task_planner:283] PLANNING Atomic:  keywords={'SCF__GUESS': 'READ', 'SCF__INTS_TOLERANCE': 1e-12, 'function_kwargs': {}}
+2023-07-08:15:12:33,27 INFO     [psi4.driver.driver:637] Compute gradient(): method=hf, basis=sto-3g, molecule=default, nre=31.15862221469564
+2023-07-08:15:12:33,166 INFO     [psi4.driver.driver:640] Return gradient(): -112.35449113001516
+2023-07-08:15:12:33,166 INFO     [psi4.driver.driver:641] [[-0.00007379 -0.00051279  0.00000000]
+ [ 0.00002408  0.00518730  0.00000000]
+ [ 0.00002486 -0.00233726 -0.00284147]
+ [ 0.00002486 -0.00233726  0.00284147]]
+2023-07-08:15:12:33,169 INFO     [psi4.optking.history:257] 	Performing BFGS update.
+2023-07-08:15:12:33,169 INFO     [psi4.optking.history:268] 	Using 1 previous steps for update.
+2023-07-08:15:12:33,170 INFO     [psi4.optking.history:302] 	Steps to be used in Hessian update:  1
+
+2023-07-08:15:12:33,170 INFO     [psi4.optking.history:400] 	Updated Hessian (in au) 
+ 	   1.008818   0.069239   0.069239   0.007508   0.007508  -0.015016   0.000379
+	  -0.000403   0.000403
+	   0.069239   0.367212   0.041695   0.001552   0.001552  -0.003104   0.000165
+	  -0.000176   0.000176
+	   0.069239   0.041695   0.367212   0.001552   0.001552  -0.003104   0.000165
+	  -0.000176   0.000176
+	   0.007508   0.001552   0.001552   0.105865  -0.054135  -0.051730  -0.000013
+	   0.000014  -0.000011
+	   0.007508   0.001552   0.001552  -0.054135   0.105865  -0.051730  -0.000013
+	   0.000011  -0.000014
+	  -0.015016  -0.003104  -0.003104  -0.051730  -0.051730   0.103460   0.000026
+	  -0.000025   0.000025
+	   0.000379   0.000165   0.000165  -0.000013  -0.000013   0.000026   0.000306
+	  -0.000326   0.000326
+	  -0.000403  -0.000176  -0.000176   0.000014   0.000011  -0.000025  -0.000326
+	   0.000348  -0.000348
+	   0.000403   0.000176   0.000176  -0.000011  -0.000014   0.000025   0.000326
+	  -0.000348   0.000348
+
+2023-07-08:15:12:33,171 INFO     [psi4.optking.molsys:874] Projected (PHP) Hessian matrix
+	   1.008818   0.069239   0.069239   0.007508   0.007508  -0.015016   0.000379
+	  -0.000403   0.000403
+	   0.069239   0.367212   0.041695   0.001552   0.001552  -0.003104   0.000165
+	  -0.000176   0.000176
+	   0.069239   0.041695   0.367212   0.001552   0.001552  -0.003104   0.000165
+	  -0.000176   0.000176
+	   0.007508   0.001552   0.001552   0.105865  -0.054135  -0.051730  -0.000013
+	   0.000014  -0.000011
+	   0.007508   0.001552   0.001552  -0.054135   0.105865  -0.051730  -0.000013
+	   0.000011  -0.000014
+	  -0.015016  -0.003104  -0.003104  -0.051730  -0.051730   0.103460   0.000026
+	  -0.000025   0.000025
+	   0.000379   0.000165   0.000165  -0.000013  -0.000013   0.000026   0.000306
+	  -0.000326   0.000326
+	  -0.000403  -0.000176  -0.000176   0.000014   0.000011  -0.000025  -0.000326
+	   0.000348  -0.000348
+	   0.000403   0.000176   0.000176  -0.000011  -0.000014   0.000025   0.000326
+	  -0.000348   0.000348
+
+2023-07-08:15:12:33,171 INFO     [psi4.optking.opt_helper:168] 
+	         Geometry (au)                                       Gradient (au)
+  -0.0002395333   1.1482292082   0.0000000000		  -0.0000737931  -0.0005127869   0.0000000000
+   0.0001632952  -1.1471096522   0.0000000000		   0.0000240774   0.0051872985   0.0000000000
+   0.0001302338   2.2668470728   1.7457793407		   0.0000248578  -0.0023372558  -0.0028414747
+   0.0001302338   2.2668470728  -1.7457793407		   0.0000248578  -0.0023372558   0.0028414747
+
+2023-07-08:15:12:33,172 INFO     [psi4.optking.stepAlgorithms:315] 	Current Step Report 
+ 
+	Current energy:      -112.3544911300
+	Energy change for the previous step:
+		Actual       :        -0.0003567561
+		Projected    :        -0.0004962244
+
+2023-07-08:15:12:33,172 INFO     [psi4.optking.stepAlgorithms:318] 	Energy ratio =    0.71894
+2023-07-08:15:12:33,172 INFO     [psi4.optking.stepAlgorithms:750] 	Using RFO solution 1.
+2023-07-08:15:12:33,173 INFO     [psi4.optking.displace:73] 	Determining Cartesian step for fragment 1.
+2023-07-08:15:12:33,176 INFO     [psi4.optking.displace:378] 	Successfully converged to displaced geometry.
+2023-07-08:15:12:33,176 INFO     [psi4.optking.displace:379] 	RMS(dx):  2.706e-10 	Max(dx):  5.155e-10 	RMS(dq):  1.988e-05
+2023-07-08:15:12:33,177 INFO     [psi4.optking.displace:132] 
+
+	        --- Internal Coordinate Step in ANG or DEG, aJ/ANG or AJ/DEG ---
+	-------------------------------------------------------------------------------
+	           Coordinate      Previous         Force          Change          New 
+	           ----------      --------        ------          ------        ------
+	               R(1,2)       1.21464        0.04274        0.00208       1.21672
+	               R(1,3)       1.09720        0.03010        0.00435       1.10155
+	               R(1,4)       1.09720        0.03010        0.00435       1.10155
+	             B(2,1,3)     122.64994        0.00002        0.08916     122.73910
+	             B(2,1,4)     122.64994        0.00002        0.08916     122.73910
+	             B(3,1,4)     114.70011       -0.00005       -0.18325     114.51685
+	           O(2,1,3,4)      -0.02899        0.00000        0.69216       0.66317
+	           O(3,1,2,4)       0.03129       -0.00000       -0.74862      -0.71733
+	           O(4,1,2,3)      -0.03129        0.00000        0.74862       0.71733
+	-------------------------------------------------------------------------------
+
+2023-07-08:15:12:33,178 INFO     [psi4.optking.stepAlgorithms:96] 	|target step| :    0.0255512367
+2023-07-08:15:12:33,178 INFO     [psi4.optking.stepAlgorithms:97] 	gradient     :   -0.0032858191
+2023-07-08:15:12:33,178 INFO     [psi4.optking.stepAlgorithms:98] 	hessian      :    0.1285131102
+2023-07-08:15:12:33,178 INFO     [psi4.optking.stepAlgorithms:177] 	Norm of achieved step-size    0.0255512367
+2023-07-08:15:12:33,178 INFO     [psi4.optking.stepAlgorithms:179] 	Norm of achieved step-size (cart):    0.0143659301
+2023-07-08:15:12:33,179 INFO     [psi4.optking.opt_helper:151] Molsys:
+
+	                            ===> Fragment 1 <== 
+
+	 Z (Atomic Numbers)          Masses                          Geom                  
+	       6.000000            12.000000          0.00660648  1.14560732  0.00000000   
+	       8.000000            15.994915         -0.00208010 -1.15364330 -0.00000000   
+	       1.000000             1.007825         -0.00217107  2.27142484  1.75089854   
+	       1.000000             1.007825         -0.00217107  2.27142484 -1.75089854   
+
+	 - Coordinate -           - BOHR/RAD -       - ANG/DEG -
+	 R(1,2)           =         2.299267           1.216720
+	 R(1,3)           =         2.081631           1.101552
+	 R(1,4)           =         2.081631           1.101552
+	 B(2,1,3)         =         2.142201         122.739105
+	 B(2,1,4)         =         2.142201         122.739105
+	 B(3,1,4)         =         1.998696         114.516855
+	 O(2,1,3,4)       =         0.011574           0.663166
+	 O(3,1,2,4)       =        -0.012520          -0.717331
+	 O(4,1,2,3)       =         0.012520           0.717331
+
+2023-07-08:15:12:33,179 INFO     [psi4.optking.convcheck:71] Performing convergence check.
+2023-07-08:15:12:33,179 INFO     [psi4.optking.convcheck:263] 
+	                                 ==> Convergence Check <==                                  
+    
+	Measures of convergence in internal coordinates in au.
+    
+	Criteria marked as inactive (o), active & met (*), and active & unmet ( ).
+
+	----------------------------------------------------------------------------------------------
+	   Step    Total Energy     Delta E     Max Force     RMS Force      Max Disp      RMS Disp   
+	----------------------------------------------------------------------------------------------
+	  Convergence Criteria     1.00e-06 *    3.00e-04 *             o    1.20e-03 *             o
+	----------------------------------------------------------------------------------------------
+	     2    -112.35449113   -3.57e-04      5.19e-03      2.45e-03 o    1.31e-02      8.52e-03 o  ~
+	----------------------------------------------------------------------------------------------
+
+
+2023-07-08:15:12:33,180 INFO     [psi4.optking.stepAlgorithms:266] 	Convergence check returned False
+2023-07-08:15:12:33,201 INFO     [psi4.driver.task_planner:283] PLANNING Atomic:  keywords={'SCF__GUESS': 'READ', 'SCF__INTS_TOLERANCE': 1e-12, 'function_kwargs': {}}
+2023-07-08:15:12:33,202 INFO     [psi4.driver.driver:637] Compute gradient(): method=hf, basis=sto-3g, molecule=default, nre=31.085956467491755
+2023-07-08:15:12:33,346 INFO     [psi4.driver.driver:640] Return gradient(): -112.35452389114454
+2023-07-08:15:12:33,346 INFO     [psi4.driver.driver:641] [[ 0.00172630 -0.00016814  0.00000000]
+ [-0.00056700 -0.00000001  0.00000000]
+ [-0.00057965  0.00008408  0.00010792]
+ [-0.00057965  0.00008408 -0.00010792]]
+2023-07-08:15:12:33,349 INFO     [psi4.optking.history:257] 	Performing BFGS update.
+2023-07-08:15:12:33,349 INFO     [psi4.optking.history:268] 	Using 2 previous steps for update.
+2023-07-08:15:12:33,350 INFO     [psi4.optking.history:302] 	Steps to be used in Hessian update:  2 1
+
+2023-07-08:15:12:33,351 INFO     [psi4.optking.history:400] 	Updated Hessian (in au) 
+ 	   0.993817   0.068295   0.068295   0.011252   0.011252  -0.022299  -0.013297
+	   0.014431  -0.014431
+	   0.068295   0.366370   0.040853   0.001139   0.001139  -0.002321   0.003119
+	  -0.003362   0.003362
+	   0.068295   0.040853   0.366370   0.001139   0.001139  -0.002321   0.003119
+	  -0.003362   0.003362
+	   0.011252   0.001139   0.001139   0.104721  -0.055279  -0.049493   0.003336
+	  -0.003619   0.003563
+	   0.011252   0.001139   0.001139  -0.055279   0.104721  -0.049493   0.003336
+	  -0.003563   0.003619
+	  -0.022299  -0.002321  -0.002321  -0.049493  -0.049493   0.099085  -0.006684
+	   0.007195  -0.007195
+	  -0.013297   0.003119   0.003119   0.003336   0.003336  -0.006684   0.001231
+	  -0.001329   0.001329
+	   0.014431  -0.003362  -0.003362  -0.003619  -0.003563   0.007195  -0.001329
+	   0.001434  -0.001434
+	  -0.014431   0.003362   0.003362   0.003563   0.003619  -0.007195   0.001329
+	  -0.001434   0.001434
+
+2023-07-08:15:12:33,352 INFO     [psi4.optking.molsys:874] Projected (PHP) Hessian matrix
+	   0.993817   0.068295   0.068295   0.011252   0.011252  -0.022299  -0.013297
+	   0.014431  -0.014431
+	   0.068295   0.366370   0.040853   0.001139   0.001139  -0.002321   0.003119
+	  -0.003362   0.003362
+	   0.068295   0.040853   0.366370   0.001139   0.001139  -0.002321   0.003119
+	  -0.003362   0.003362
+	   0.011252   0.001139   0.001139   0.104721  -0.055279  -0.049493   0.003336
+	  -0.003619   0.003563
+	   0.011252   0.001139   0.001139  -0.055279   0.104721  -0.049493   0.003336
+	  -0.003563   0.003619
+	  -0.022299  -0.002321  -0.002321  -0.049493  -0.049493   0.099085  -0.006684
+	   0.007195  -0.007195
+	  -0.013297   0.003119   0.003119   0.003336   0.003336  -0.006684   0.001231
+	  -0.001329   0.001329
+	   0.014431  -0.003362  -0.003362  -0.003619  -0.003563   0.007195  -0.001329
+	   0.001434  -0.001434
+	  -0.014431   0.003362   0.003362   0.003563   0.003619  -0.007195   0.001329
+	  -0.001434   0.001434
+
+2023-07-08:15:12:33,352 INFO     [psi4.optking.opt_helper:168] 
+	         Geometry (au)                                       Gradient (au)
+   0.0052192837   1.1498305249   0.0000000000		   0.0017263008  -0.0001681443   0.0000000000
+  -0.0034673005  -1.1494201036   0.0000000000		  -0.0005670030  -0.0000000110   0.0000000000
+  -0.0035582713   2.2756480410   1.7508985382		  -0.0005796489   0.0000840777   0.0001079164
+  -0.0035582713   2.2756480410  -1.7508985382		  -0.0005796489   0.0000840777  -0.0001079164
+
+2023-07-08:15:12:33,352 INFO     [psi4.optking.stepAlgorithms:315] 	Current Step Report 
+ 
+	Current energy:      -112.3545238911
+	Energy change for the previous step:
+		Actual       :        -0.0000327611
+		Projected    :        -0.0000419784
+
+2023-07-08:15:12:33,352 INFO     [psi4.optking.stepAlgorithms:318] 	Energy ratio =    0.78043
+2023-07-08:15:12:33,352 INFO     [psi4.optking.stepAlgorithms:346] 	Energy ratio indicates good step.
+2023-07-08:15:12:33,352 INFO     [psi4.optking.stepAlgorithms:347] 	Intrafrag trust radius increased to 1.000e+00.
+2023-07-08:15:12:33,353 INFO     [psi4.optking.stepAlgorithms:750] 	Using RFO solution 1.
+2023-07-08:15:12:33,353 INFO     [psi4.optking.displace:73] 	Determining Cartesian step for fragment 1.
+2023-07-08:15:12:33,357 INFO     [psi4.optking.displace:378] 	Successfully converged to displaced geometry.
+2023-07-08:15:12:33,357 INFO     [psi4.optking.displace:379] 	RMS(dx):  1.669e-09 	Max(dx):  4.265e-09 	RMS(dq):  5.476e-03
+2023-07-08:15:12:33,358 INFO     [psi4.optking.displace:132] 
+
+	        --- Internal Coordinate Step in ANG or DEG, aJ/ANG or AJ/DEG ---
+	-------------------------------------------------------------------------------
+	           Coordinate      Previous         Force          Change          New 
+	           ----------      --------        ------          ------        ------
+	               R(1,2)       1.21672       -0.00002       -0.00596       1.21076
+	               R(1,3)       1.10155       -0.00114        0.00347       1.10502
+	               R(1,4)       1.10155       -0.00114        0.00347       1.10502
+	             B(2,1,3)     122.73910       -0.00000        0.45066     123.18977
+	             B(2,1,4)     122.73910       -0.00000        0.45066     123.18977
+	             B(3,1,4)     114.51685        0.00000       -2.29751     112.21935
+	           O(2,1,3,4)       0.66317       -0.00003      -11.63426     -10.97110
+	           O(3,1,2,4)      -0.71733        0.00003       12.87054      12.15321
+	           O(4,1,2,3)       0.71733       -0.00003      -12.87054     -12.15321
+	-------------------------------------------------------------------------------
+
+2023-07-08:15:12:33,359 INFO     [psi4.optking.stepAlgorithms:96] 	|target step| :    0.3796003572
+2023-07-08:15:12:33,359 INFO     [psi4.optking.stepAlgorithms:97] 	gradient     :   -0.0007015617
+2023-07-08:15:12:33,359 INFO     [psi4.optking.stepAlgorithms:98] 	hessian      :    0.0015747391
+2023-07-08:15:12:33,359 INFO     [psi4.optking.stepAlgorithms:177] 	Norm of achieved step-size    0.3796003572
+2023-07-08:15:12:33,359 INFO     [psi4.optking.stepAlgorithms:179] 	Norm of achieved step-size (cart):    0.1396043446
+2023-07-08:15:12:33,359 INFO     [psi4.optking.opt_helper:151] Molsys:
+
+	                            ===> Fragment 1 <== 
+
+	 Z (Atomic Numbers)          Masses                          Geom                  
+	       6.000000            12.000000         -0.11194000  1.13125598  0.00000000   
+	       8.000000            15.994915          0.03509819 -1.15201849 -0.00000000   
+	       1.000000             1.007825          0.03573862  2.28623451  1.73341461   
+	       1.000000             1.007825          0.03573862  2.28623451 -1.73341461   
+
+	 - Coordinate -           - BOHR/RAD -       - ANG/DEG -
+	 R(1,2)           =         2.288004           1.210760
+	 R(1,3)           =         2.088184           1.105019
+	 R(1,4)           =         2.088184           1.105019
+	 B(2,1,3)         =         2.150067         123.189769
+	 B(2,1,4)         =         2.150067         123.189769
+	 B(3,1,4)         =         1.958597         112.219346
+	 O(2,1,3,4)       =        -0.191482         -10.971096
+	 O(3,1,2,4)       =         0.212113          12.153208
+	 O(4,1,2,3)       =        -0.212113         -12.153208
+
+2023-07-08:15:12:33,360 INFO     [psi4.optking.convcheck:71] Performing convergence check.
+2023-07-08:15:12:33,360 INFO     [psi4.optking.convcheck:263] 
+	                                 ==> Convergence Check <==                                  
+    
+	Measures of convergence in internal coordinates in au.
+    
+	Criteria marked as inactive (o), active & met (*), and active & unmet ( ).
+
+	----------------------------------------------------------------------------------------------
+	   Step    Total Energy     Delta E     Max Force     RMS Force      Max Disp      RMS Disp   
+	----------------------------------------------------------------------------------------------
+	  Convergence Criteria     1.00e-06 *    3.00e-04 *             o    1.20e-03 *             o
+	----------------------------------------------------------------------------------------------
+	     3    -112.35452389   -3.28e-05      4.22e-04      2.47e-04 o    2.25e-01      1.27e-01 o  ~
+	----------------------------------------------------------------------------------------------
+
+
+2023-07-08:15:12:33,360 INFO     [psi4.optking.stepAlgorithms:266] 	Convergence check returned False
+2023-07-08:15:12:33,374 INFO     [psi4.driver.task_planner:283] PLANNING Atomic:  keywords={'SCF__GUESS': 'READ', 'SCF__INTS_TOLERANCE': 1e-12, 'function_kwargs': {}}
+2023-07-08:15:12:33,376 INFO     [psi4.driver.driver:637] Compute gradient(): method=hf, basis=sto-3g, molecule=default, nre=31.169363198660967
+2023-07-08:15:12:33,516 INFO     [psi4.driver.driver:640] Return gradient(): -112.35215434735031
+2023-07-08:15:12:33,516 INFO     [psi4.driver.driver:641] [[-0.02889832 -0.02147559  0.00000000]
+ [ 0.00878764  0.01356249  0.00000000]
+ [ 0.01005534  0.00395655 -0.00088987]
+ [ 0.01005534  0.00395655  0.00088987]]
+2023-07-08:15:12:33,518 INFO     [psi4.optking.history:257] 	Performing BFGS update.
+2023-07-08:15:12:33,519 INFO     [psi4.optking.history:268] 	Using 3 previous steps for update.
+2023-07-08:15:12:33,520 INFO     [psi4.optking.history:302] 	Steps to be used in Hessian update:  3 2 1
+
+2023-07-08:15:12:33,521 INFO     [psi4.optking.history:400] 	Updated Hessian (in au) 
+ 	   1.025647   0.064203   0.064203   0.006239   0.006239  -0.008568   0.002062
+	  -0.004678   0.004678
+	   0.064203   0.367792   0.042276   0.001801   0.001801  -0.004478   0.000466
+	  -0.000059   0.000059
+	   0.064203   0.042276   0.367792   0.001801   0.001801  -0.004478   0.000466
+	  -0.000059   0.000059
+	   0.006239   0.001801   0.001801   0.105463  -0.054516  -0.051621   0.000567
+	  -0.000081   0.001369
+	   0.006239   0.001801   0.001801  -0.054516   0.105463  -0.051621   0.000567
+	  -0.001369   0.000081
+	  -0.008568  -0.004478  -0.004478  -0.051621  -0.051621   0.105131   0.000898
+	  -0.001063   0.001063
+	   0.002062   0.000466   0.000466   0.000567   0.000567   0.000898   0.008369
+	  -0.010304   0.010304
+	  -0.004678  -0.000059  -0.000059  -0.000081  -0.001369  -0.001063  -0.010304
+	   0.012698  -0.012688
+	   0.004678   0.000059   0.000059   0.001369   0.000081   0.001063   0.010304
+	  -0.012688   0.012698
+
+2023-07-08:15:12:33,522 INFO     [psi4.optking.molsys:874] Projected (PHP) Hessian matrix
+	   1.025647   0.064203   0.064203   0.006239   0.006239  -0.008568   0.002062
+	  -0.004678   0.004678
+	   0.064203   0.367792   0.042276   0.001801   0.001801  -0.004478   0.000466
+	  -0.000059   0.000059
+	   0.064203   0.042276   0.367792   0.001801   0.001801  -0.004478   0.000466
+	  -0.000059   0.000059
+	   0.006239   0.001801   0.001801   0.105463  -0.054516  -0.051621   0.000567
+	  -0.000081   0.001369
+	   0.006239   0.001801   0.001801  -0.054516   0.105463  -0.051621   0.000567
+	  -0.001369   0.000081
+	  -0.008568  -0.004478  -0.004478  -0.051621  -0.051621   0.105131   0.000898
+	  -0.001063   0.001063
+	   0.002062   0.000466   0.000466   0.000567   0.000567   0.000898   0.008369
+	  -0.010304   0.010304
+	  -0.004678  -0.000059  -0.000059  -0.000081  -0.001369  -0.001063  -0.010304
+	   0.012698  -0.012688
+	   0.004678   0.000059   0.000059   0.001369   0.000081   0.001063   0.010304
+	  -0.012688   0.012698
+
+2023-07-08:15:12:33,522 INFO     [psi4.optking.opt_helper:168] 
+	         Geometry (au)                                       Gradient (au)
+  -0.0882866327   1.1393570239   0.0000000000		  -0.0288983227  -0.0214755859   0.0000000000
+   0.0587515568  -1.1439174463   0.0000000000		   0.0087876439   0.0135624868   0.0000000000
+   0.0593919848   2.2943355499   1.7334146099		   0.0100553394   0.0039565496  -0.0008898654
+   0.0593919848   2.2943355499  -1.7334146099		   0.0100553394   0.0039565496   0.0008898654
+
+2023-07-08:15:12:33,523 INFO     [psi4.optking.stepAlgorithms:315] 	Current Step Report 
+ 
+	Current energy:      -112.3521543474
+	Energy change for the previous step:
+		Actual       :         0.0023695438
+		Projected    :        -0.0001336041
+
+2023-07-08:15:12:33,523 INFO     [psi4.optking.stepAlgorithms:318] 	Energy ratio =  -17.73557
+2023-07-08:15:12:33,523 WARNING  [psi4.optking.stepAlgorithms:326] 	Energy has increased in a minimization.
+2023-07-08:15:12:33,523 WARNING  [psi4.optking.stepAlgorithms:365] 	Energy ratio indicates iffy step.
+2023-07-08:15:12:33,523 WARNING  [psi4.optking.stepAlgorithms:366] 	Intrafrag trust radius decreased to 2.500e-01.
+2023-07-08:15:12:33,523 INFO     [psi4.optking.stepAlgorithms:286] 	Near start of optimization, so ignoring bad step.
+
+2023-07-08:15:12:33,523 INFO     [psi4.optking.stepAlgorithms:750] 	Using RFO solution 1.
+2023-07-08:15:12:33,523 INFO     [psi4.optking.displace:73] 	Determining Cartesian step for fragment 1.
+2023-07-08:15:12:33,527 INFO     [psi4.optking.displace:378] 	Successfully converged to displaced geometry.
+2023-07-08:15:12:33,527 INFO     [psi4.optking.displace:379] 	RMS(dx):  6.866e-10 	Max(dx):  1.506e-09 	RMS(dq):  2.398e-03
+2023-07-08:15:12:33,528 INFO     [psi4.optking.displace:132] 
+
+	        --- Internal Coordinate Step in ANG or DEG, aJ/ANG or AJ/DEG ---
+	-------------------------------------------------------------------------------
+	           Coordinate      Previous         Force          Change          New 
+	           ----------      --------        ------          ------        ------
+	               R(1,2)       1.21076        0.10685        0.00639       1.21715
+	               R(1,3)       1.10502       -0.01780       -0.00350       1.10152
+	               R(1,4)       1.10502       -0.01780       -0.00350       1.10152
+	             B(2,1,3)     123.18977       -0.00015       -0.43453     122.75524
+	             B(2,1,4)     123.18977       -0.00015       -0.43453     122.75524
+	             B(3,1,4)     112.21935        0.00044        2.13740     114.35674
+	           O(2,1,3,4)     -10.97110        0.00046        7.53547      -3.43563
+	           O(3,1,2,4)      12.15321       -0.00057       -8.43121       3.72200
+	           O(4,1,2,3)     -12.15321        0.00057        8.43121      -3.72200
+	-------------------------------------------------------------------------------
+
+2023-07-08:15:12:33,529 INFO     [psi4.optking.stepAlgorithms:96] 	|target step| :    0.2496891092
+2023-07-08:15:12:33,529 INFO     [psi4.optking.stepAlgorithms:97] 	gradient     :   -0.0138129051
+2023-07-08:15:12:33,529 INFO     [psi4.optking.stepAlgorithms:98] 	hessian      :    0.0396617113
+2023-07-08:15:12:33,529 INFO     [psi4.optking.stepAlgorithms:177] 	Norm of achieved step-size    0.2496891092
+2023-07-08:15:12:33,529 INFO     [psi4.optking.stepAlgorithms:179] 	Norm of achieved step-size (cart):    0.0939744556
+2023-07-08:15:12:33,529 INFO     [psi4.optking.opt_helper:151] Molsys:
+
+	                            ===> Fragment 1 <== 
+
+	 Z (Atomic Numbers)          Masses                          Geom                  
+	       6.000000            12.000000         -0.01172343  1.15725701 -0.00000000   
+	       8.000000            15.994915          0.03380091 -1.14236510  0.00000000   
+	       1.000000             1.007825          0.03358570  2.28460938  1.74927014   
+	       1.000000             1.007825          0.03358570  2.28460938 -1.74927014   
+
+	 - Coordinate -           - BOHR/RAD -       - ANG/DEG -
+	 R(1,2)           =         2.300073           1.217146
+	 R(1,3)           =         2.081567           1.101518
+	 R(1,4)           =         2.081567           1.101518
+	 B(2,1,3)         =         2.142483         122.755236
+	 B(2,1,4)         =         2.142483         122.755236
+	 B(3,1,4)         =         1.995902         114.356742
+	 O(2,1,3,4)       =        -0.059963          -3.435626
+	 O(3,1,2,4)       =         0.064961           3.722002
+	 O(4,1,2,3)       =        -0.064961          -3.722002
+
+2023-07-08:15:12:33,530 INFO     [psi4.optking.convcheck:71] Performing convergence check.
+2023-07-08:15:12:33,530 INFO     [psi4.optking.convcheck:263] 
+	                                 ==> Convergence Check <==                                  
+    
+	Measures of convergence in internal coordinates in au.
+    
+	Criteria marked as inactive (o), active & met (*), and active & unmet ( ).
+
+	----------------------------------------------------------------------------------------------
+	   Step    Total Energy     Delta E     Max Force     RMS Force      Max Disp      RMS Disp   
+	----------------------------------------------------------------------------------------------
+	  Convergence Criteria     1.00e-06 *    3.00e-04 *             o    1.20e-03 *             o
+	----------------------------------------------------------------------------------------------
+	     4    -112.35215435    2.37e-03      1.30e-02      6.41e-03 o    1.47e-01      8.32e-02 o  ~
+	----------------------------------------------------------------------------------------------
+
+
+2023-07-08:15:12:33,530 INFO     [psi4.optking.stepAlgorithms:266] 	Convergence check returned False
+2023-07-08:15:12:33,544 INFO     [psi4.driver.task_planner:283] PLANNING Atomic:  keywords={'SCF__GUESS': 'READ', 'SCF__INTS_TOLERANCE': 1e-12, 'function_kwargs': {}}
+2023-07-08:15:12:33,545 INFO     [psi4.driver.driver:637] Compute gradient(): method=hf, basis=sto-3g, molecule=default, nre=31.078052240176895
+2023-07-08:15:12:33,679 INFO     [psi4.driver.driver:640] Return gradient(): -112.35432742165182
+2023-07-08:15:12:33,679 INFO     [psi4.driver.driver:641] [[-0.00896332  0.00025674  0.00000000]
+ [ 0.00295206 -0.00078755  0.00000000]
+ [ 0.00300563  0.00026540 -0.00014029]
+ [ 0.00300563  0.00026540  0.00014029]]
+2023-07-08:15:12:33,682 INFO     [psi4.optking.history:257] 	Performing BFGS update.
+2023-07-08:15:12:33,682 INFO     [psi4.optking.history:268] 	Using 4 previous steps for update.
+2023-07-08:15:12:33,683 INFO     [psi4.optking.history:302] 	Steps to be used in Hessian update:  4 3 2 1
+
+2023-07-08:15:12:33,685 INFO     [psi4.optking.history:400] 	Updated Hessian (in au) 
+ 	   1.019279   0.062915   0.062915   0.005780   0.005780  -0.010188   0.003379
+	   0.002563  -0.002563
+	   0.062915   0.370413   0.044897   0.002084   0.002084  -0.004921   0.001609
+	   0.000726  -0.000726
+	   0.062915   0.044897   0.370413   0.002084   0.002084  -0.004921   0.001609
+	   0.000726  -0.000726
+	   0.005780   0.002084   0.002084   0.102136  -0.051329  -0.050981   0.004856
+	  -0.008601  -0.013017
+	   0.005780   0.002084   0.002084  -0.051329   0.102136  -0.050981   0.004856
+	   0.013017   0.008601
+	  -0.010188  -0.004921  -0.004921  -0.050981  -0.050981   0.102368  -0.008978
+	  -0.005183   0.005183
+	   0.003379   0.001609   0.001609   0.004856   0.004856  -0.008978   0.012509
+	  -0.010906   0.010906
+	   0.002563   0.000726   0.000726  -0.008601   0.013017  -0.005183  -0.010906
+	   0.012825  -0.009779
+	  -0.002563  -0.000726  -0.000726  -0.013017   0.008601   0.005183   0.010906
+	  -0.009779   0.012825
+
+2023-07-08:15:12:33,686 INFO     [psi4.optking.molsys:874] Projected (PHP) Hessian matrix
+	   1.019279   0.062915   0.062915   0.005780   0.005780  -0.010188   0.003379
+	   0.002563  -0.002563
+	   0.062915   0.370413   0.044897   0.002084   0.002084  -0.004921   0.001609
+	   0.000726  -0.000726
+	   0.062915   0.044897   0.370413   0.002084   0.002084  -0.004921   0.001609
+	   0.000726  -0.000726
+	   0.005780   0.002084   0.002084   0.102136  -0.051329  -0.050981   0.004856
+	  -0.008601  -0.013017
+	   0.005780   0.002084   0.002084  -0.051329   0.102136  -0.050981   0.004856
+	   0.013017   0.008601
+	  -0.010188  -0.004921  -0.004921  -0.050981  -0.050981   0.102368  -0.008978
+	  -0.005183   0.005183
+	   0.003379   0.001609   0.001609   0.004856   0.004856  -0.008978   0.012509
+	  -0.010906   0.010906
+	   0.002563   0.000726   0.000726  -0.008601   0.013017  -0.005183  -0.010906
+	   0.012825  -0.009779
+	  -0.002563  -0.000726  -0.000726  -0.013017   0.008601   0.005183   0.010906
+	  -0.009779   0.012825
+
+2023-07-08:15:12:33,686 INFO     [psi4.optking.opt_helper:168] 
+	         Geometry (au)                                       Gradient (au)
+  -0.0273065623   1.1499254264   0.0000000000		  -0.0089633185   0.0002567412   0.0000000000
+   0.0182177816  -1.1496966815   0.0000000000		   0.0029520566  -0.0007875511   0.0000000000
+   0.0180025726   2.2772777990   1.7492701390		   0.0030056310   0.0002654049  -0.0001402882
+   0.0180025726   2.2772777990  -1.7492701390		   0.0030056310   0.0002654049   0.0001402882
+
+2023-07-08:15:12:33,686 INFO     [psi4.optking.stepAlgorithms:315] 	Current Step Report 
+ 
+	Current energy:      -112.3543274217
+	Energy change for the previous step:
+		Actual       :        -0.0021730743
+		Projected    :        -0.0020827367
+
+2023-07-08:15:12:33,687 INFO     [psi4.optking.stepAlgorithms:318] 	Energy ratio =    1.04337
+2023-07-08:15:12:33,687 INFO     [psi4.optking.stepAlgorithms:346] 	Energy ratio indicates good step.
+2023-07-08:15:12:33,687 INFO     [psi4.optking.stepAlgorithms:347] 	Intrafrag trust radius increased to 7.500e-01.
+2023-07-08:15:12:33,687 INFO     [psi4.optking.stepAlgorithms:750] 	Using RFO solution 1.
+2023-07-08:15:12:33,687 INFO     [psi4.optking.displace:73] 	Determining Cartesian step for fragment 1.
+2023-07-08:15:12:33,690 INFO     [psi4.optking.displace:378] 	Successfully converged to displaced geometry.
+2023-07-08:15:12:33,690 INFO     [psi4.optking.displace:379] 	RMS(dx):  4.275e-09 	Max(dx):  9.394e-09 	RMS(dq):  4.359e-04
+2023-07-08:15:12:33,691 INFO     [psi4.optking.displace:132] 
+
+	        --- Internal Coordinate Step in ANG or DEG, aJ/ANG or AJ/DEG ---
+	-------------------------------------------------------------------------------
+	           Coordinate      Previous         Force          Change          New 
+	           ----------      --------        ------          ------        ------
+	               R(1,2)       1.21715       -0.00697       -0.00035       1.21680
+	               R(1,3)       1.10152       -0.00075       -0.00005       1.10147
+	               R(1,4)       1.10152       -0.00075       -0.00005       1.10147
+	             B(2,1,3)     122.75524       -0.00001       -0.01486     122.74038
+	             B(2,1,4)     122.75524       -0.00001       -0.01486     122.74038
+	             B(3,1,4)     114.35674        0.00004        0.16248     114.51922
+	           O(2,1,3,4)      -3.43563        0.00015        3.39297      -0.04265
+	           O(3,1,2,4)       3.72200       -0.00017       -3.67586       0.04614
+	           O(4,1,2,3)      -3.72200        0.00017        3.67586      -0.04614
+	-------------------------------------------------------------------------------
+
+2023-07-08:15:12:33,691 INFO     [psi4.optking.stepAlgorithms:96] 	|target step| :    0.1083855599
+2023-07-08:15:12:33,691 INFO     [psi4.optking.stepAlgorithms:97] 	gradient     :   -0.0037173941
+2023-07-08:15:12:33,691 INFO     [psi4.optking.stepAlgorithms:98] 	hessian      :    0.0338848762
+2023-07-08:15:12:33,691 INFO     [psi4.optking.stepAlgorithms:177] 	Norm of achieved step-size    0.1083855599
+2023-07-08:15:12:33,691 INFO     [psi4.optking.stepAlgorithms:179] 	Norm of achieved step-size (cart):    0.0389107886
+2023-07-08:15:12:33,692 INFO     [psi4.optking.opt_helper:151] Molsys:
+
+	                            ===> Fragment 1 <== 
+
+	 Z (Atomic Numbers)          Masses                          Geom                  
+	       6.000000            12.000000          0.00630555  1.15068163 -0.00000000   
+	       8.000000            15.994915          0.00717038 -1.14872897  0.00000000   
+	       1.000000             1.007825          0.00672022  2.27641584  1.75079546   
+	       1.000000             1.007825          0.00672022  2.27641584 -1.75079546   
+
+	 - Coordinate -           - BOHR/RAD -       - ANG/DEG -
+	 R(1,2)           =         2.299411           1.216796
+	 R(1,3)           =         2.081481           1.101472
+	 R(1,4)           =         2.081481           1.101472
+	 B(2,1,3)         =         2.142224         122.740378
+	 B(2,1,4)         =         2.142224         122.740378
+	 B(3,1,4)         =         1.998738         114.519224
+	 O(2,1,3,4)       =        -0.000744          -0.042655
+	 O(3,1,2,4)       =         0.000805           0.046138
+	 O(4,1,2,3)       =        -0.000805          -0.046138
+
+2023-07-08:15:12:33,692 INFO     [psi4.optking.convcheck:71] Performing convergence check.
+2023-07-08:15:12:33,692 INFO     [psi4.optking.convcheck:263] 
+	                                 ==> Convergence Check <==                                  
+    
+	Measures of convergence in internal coordinates in au.
+    
+	Criteria marked as inactive (o), active & met (*), and active & unmet ( ).
+
+	----------------------------------------------------------------------------------------------
+	   Step    Total Energy     Delta E     Max Force     RMS Force      Max Disp      RMS Disp   
+	----------------------------------------------------------------------------------------------
+	  Convergence Criteria     1.00e-06 *    3.00e-04 *             o    1.20e-03 *             o
+	----------------------------------------------------------------------------------------------
+	     5    -112.35432742   -2.17e-03      2.20e-03      1.28e-03 o    6.42e-02      3.61e-02 o  ~
+	----------------------------------------------------------------------------------------------
+
+
+2023-07-08:15:12:33,692 INFO     [psi4.optking.stepAlgorithms:266] 	Convergence check returned False
+2023-07-08:15:12:33,706 INFO     [psi4.driver.task_planner:283] PLANNING Atomic:  keywords={'SCF__GUESS': 'READ', 'SCF__INTS_TOLERANCE': 1e-12, 'function_kwargs': {}}
+2023-07-08:15:12:33,707 INFO     [psi4.driver.driver:637] Compute gradient(): method=hf, basis=sto-3g, molecule=default, nre=31.085061366825194
+2023-07-08:15:12:33,833 INFO     [psi4.driver.driver:640] Return gradient(): -112.35453142581144
+2023-07-08:15:12:33,833 INFO     [psi4.driver.driver:641] [[-0.00011104  0.00005515  0.00000000]
+ [ 0.00003652 -0.00016466  0.00000000]
+ [ 0.00003726  0.00005476  0.00005633]
+ [ 0.00003726  0.00005476 -0.00005633]]
+2023-07-08:15:12:33,836 INFO     [psi4.optking.history:257] 	Performing BFGS update.
+2023-07-08:15:12:33,836 INFO     [psi4.optking.history:268] 	Using 4 previous steps for update.
+2023-07-08:15:12:33,837 INFO     [psi4.optking.history:302] 	Steps to be used in Hessian update:  5 4 3 2
+
+2023-07-08:15:12:33,839 INFO     [psi4.optking.history:400] 	Updated Hessian (in au) 
+ 	   1.039174   0.066638   0.066638   0.006028   0.006028  -0.008258  -0.003008
+	  -0.000277   0.000277
+	   0.066638   0.375438   0.049922   0.002811   0.002811  -0.006243  -0.000246
+	  -0.000479   0.000479
+	   0.066638   0.049922   0.375438   0.002811   0.002811  -0.006243  -0.000246
+	  -0.000479   0.000479
+	   0.006028   0.002811   0.002811   0.102667  -0.052070  -0.051174   0.001687
+	  -0.002269  -0.004207
+	   0.006028   0.002811   0.002811  -0.052070   0.102667  -0.051174   0.001687
+	   0.004207   0.002269
+	  -0.008258  -0.006243  -0.006243  -0.051174  -0.051174   0.103535  -0.003545
+	  -0.001828   0.001828
+	  -0.003008  -0.000246  -0.000246   0.001687   0.001687  -0.003545   0.010213
+	  -0.010848   0.010848
+	  -0.000277  -0.000479  -0.000479  -0.002269   0.004207  -0.001828  -0.010848
+	   0.011983  -0.011712
+	   0.000277   0.000479   0.000479  -0.004207   0.002269   0.001828   0.010848
+	  -0.011712   0.011983
+
+2023-07-08:15:12:33,840 INFO     [psi4.optking.molsys:874] Projected (PHP) Hessian matrix
+	   1.039174   0.066638   0.066638   0.006028   0.006028  -0.008258  -0.003008
+	  -0.000277   0.000277
+	   0.066638   0.375438   0.049922   0.002811   0.002811  -0.006243  -0.000246
+	  -0.000479   0.000479
+	   0.066638   0.049922   0.375438   0.002811   0.002811  -0.006243  -0.000246
+	  -0.000479   0.000479
+	   0.006028   0.002811   0.002811   0.102667  -0.052070  -0.051174   0.001687
+	  -0.002269  -0.004207
+	   0.006028   0.002811   0.002811  -0.052070   0.102667  -0.051174   0.001687
+	   0.004207   0.002269
+	  -0.008258  -0.006243  -0.006243  -0.051174  -0.051174   0.103535  -0.003545
+	  -0.001828   0.001828
+	  -0.003008  -0.000246  -0.000246   0.001687   0.001687  -0.003545   0.010213
+	  -0.010848   0.010848
+	  -0.000277  -0.000479  -0.000479  -0.002269   0.004207  -0.001828  -0.010848
+	   0.011983  -0.011712
+	   0.000277   0.000479   0.000479  -0.004207   0.002269   0.001828   0.010848
+	  -0.011712   0.011983
+
+2023-07-08:15:12:33,840 INFO     [psi4.optking.opt_helper:168] 
+	         Geometry (au)                                       Gradient (au)
+  -0.0004887886   1.1499213797   0.0000000000		  -0.0001110386   0.0000551456   0.0000000000
+   0.0003760484  -1.1494892178   0.0000000000		   0.0000365212  -0.0001646625   0.0000000000
+  -0.0000741194   2.2756555911   1.7507954585		   0.0000372587   0.0000547585   0.0000563292
+  -0.0000741194   2.2756555911  -1.7507954585		   0.0000372587   0.0000547585  -0.0000563292
+
+2023-07-08:15:12:33,841 INFO     [psi4.optking.stepAlgorithms:315] 	Current Step Report 
+ 
+	Current energy:      -112.3545314258
+	Energy change for the previous step:
+		Actual       :        -0.0002040042
+		Projected    :        -0.0002015145
+
+2023-07-08:15:12:33,841 INFO     [psi4.optking.stepAlgorithms:318] 	Energy ratio =    1.01235
+2023-07-08:15:12:33,841 INFO     [psi4.optking.stepAlgorithms:346] 	Energy ratio indicates good step.
+2023-07-08:15:12:33,841 INFO     [psi4.optking.stepAlgorithms:347] 	Intrafrag trust radius increased to 1.000e+00.
+2023-07-08:15:12:33,841 INFO     [psi4.optking.stepAlgorithms:750] 	Using RFO solution 1.
+2023-07-08:15:12:33,841 INFO     [psi4.optking.displace:73] 	Determining Cartesian step for fragment 1.
+2023-07-08:15:12:33,843 INFO     [psi4.optking.displace:378] 	Successfully converged to displaced geometry.
+2023-07-08:15:12:33,843 INFO     [psi4.optking.displace:379] 	RMS(dx):  3.959e-08 	Max(dx):  7.466e-08 	RMS(dq):  7.093e-08
+2023-07-08:15:12:33,844 INFO     [psi4.optking.displace:132] 
+
+	        --- Internal Coordinate Step in ANG or DEG, aJ/ANG or AJ/DEG ---
+	-------------------------------------------------------------------------------
+	           Coordinate      Previous         Force          Change          New 
+	           ----------      --------        ------          ------        ------
+	               R(1,2)       1.21680       -0.00136       -0.00007       1.21672
+	               R(1,3)       1.10147       -0.00063       -0.00008       1.10139
+	               R(1,4)       1.10147       -0.00063       -0.00008       1.10139
+	             B(2,1,3)     122.74038       -0.00000       -0.00334     122.73703
+	             B(2,1,4)     122.74038       -0.00000       -0.00334     122.73703
+	             B(3,1,4)     114.51922        0.00000        0.00671     114.52593
+	           O(2,1,3,4)      -0.04265        0.00000        0.04258      -0.00007
+	           O(3,1,2,4)       0.04614       -0.00000       -0.04606       0.00008
+	           O(4,1,2,3)      -0.04614        0.00000        0.04606      -0.00008
+	-------------------------------------------------------------------------------
+
+2023-07-08:15:12:33,845 INFO     [psi4.optking.stepAlgorithms:96] 	|target step| :    0.0013906506
+2023-07-08:15:12:33,845 INFO     [psi4.optking.stepAlgorithms:97] 	gradient     :   -0.0000810858
+2023-07-08:15:12:33,845 INFO     [psi4.optking.stepAlgorithms:98] 	hessian      :    0.0583076734
+2023-07-08:15:12:33,845 INFO     [psi4.optking.stepAlgorithms:177] 	Norm of achieved step-size    0.0013906506
+2023-07-08:15:12:33,845 INFO     [psi4.optking.stepAlgorithms:179] 	Norm of achieved step-size (cart):    0.0005658151
+2023-07-08:15:12:33,845 INFO     [psi4.optking.opt_helper:151] Molsys:
+
+	                            ===> Fragment 1 <== 
+
+	 Z (Atomic Numbers)          Masses                          Geom                  
+	       6.000000            12.000000         -0.00006756  1.14998187  0.00000000   
+	       8.000000            15.994915          0.00023759 -1.14929409 -0.00000000   
+	       1.000000             1.007825         -0.00021550  2.27552778  1.75072777   
+	       1.000000             1.007825         -0.00021550  2.27552778 -1.75072777   
+
+	 - Coordinate -           - BOHR/RAD -       - ANG/DEG -
+	 R(1,2)           =         2.299276           1.216724
+	 R(1,3)           =         2.081322           1.101388
+	 R(1,4)           =         2.081322           1.101388
+	 B(2,1,3)         =         2.142165         122.737034
+	 B(2,1,4)         =         2.142165         122.737034
+	 B(3,1,4)         =         1.998855         114.525932
+	 O(2,1,3,4)       =        -0.000001          -0.000073
+	 O(3,1,2,4)       =         0.000001           0.000079
+	 O(4,1,2,3)       =        -0.000001          -0.000079
+
+2023-07-08:15:12:33,845 INFO     [psi4.optking.convcheck:71] Performing convergence check.
+2023-07-08:15:12:33,845 INFO     [psi4.optking.convcheck:263] 
+	                                 ==> Convergence Check <==                                  
+    
+	Measures of convergence in internal coordinates in au.
+    
+	Criteria marked as inactive (o), active & met (*), and active & unmet ( ).
+
+	----------------------------------------------------------------------------------------------
+	   Step    Total Energy     Delta E     Max Force     RMS Force      Max Disp      RMS Disp   
+	----------------------------------------------------------------------------------------------
+	  Convergence Criteria     1.00e-06 *    3.00e-04 *             o    1.20e-03 *             o
+	----------------------------------------------------------------------------------------------
+	     6    -112.35453143   -2.04e-04      1.65e-04 *    6.81e-05 o    8.04e-04 *    4.64e-04 o  ~
+	----------------------------------------------------------------------------------------------
+
+
+2023-07-08:15:12:33,845 INFO     [psi4.optking.convcheck:193] 
+	                      ===> Final Convergence Report <===                     
+
+	----------------------------------------------------------------------------
+	|   Required Criteria    |  One or More Criteria  |   Alternate Criteria   |
+	----------------------------------------------------------------------------
+	| [x]     max_force      | [ ]       max_DE       |                        |
+	|                        | [x]      max_disp      |                        |
+	----------------------------------------------------------------------------
+
+
+2023-07-08:15:12:33,845 INFO     [psi4.optking.stepAlgorithms:266] 	Convergence check returned True
+2023-07-08:15:12:33,845 INFO     [psi4.optking.optimize:286] 	Converged in 6 steps!
+2023-07-08:15:12:33,846 INFO     [psi4.optking.optimize:287] 	Final energy is   -112.3545314258114
+2023-07-08:15:12:33,846 INFO     [psi4.optking.optimize:288] 	Final structure (Angstroms): 
+	Fragment 1 (Ang)
+
+	    C  -0.0000357524   0.6085442001   0.0000000000
+	    O   0.0001257254  -0.6081802433  -0.0000000000
+	    H  -0.0001140386   1.2041574449   0.9264452391
+	    H  -0.0001140386   1.2041574449  -0.9264452391
+
+
+2023-07-08:15:12:33,846 INFO     [psi4.optking.optimize:432] 	Optimization Finished
+
+	==> Optimization Summary <==
+
+        
+	Measures of convergence in internal coordinates in au. (Any backward steps not shown.)
+        
+	---------------------------------------------------------------------------------------------------------------  ~
+        
+	 Step         Total Energy             Delta E       MAX Force       RMS Force        MAX Disp        RMS Disp   ~
+        
+	---------------------------------------------------------------------------------------------------------------  ~
+        
+	     1    -112.354134373873   -112.354134373873      0.02211268      0.00837501      0.02504487      0.01548988  ~
+	     2    -112.354491130015     -0.000356756142      0.00518729      0.00245280      0.01306583      0.00851708  ~
+	     3    -112.354523891145     -0.000032761129      0.00042229      0.00024673      0.22463328      0.12653345  ~
+	     4    -112.352154347350      0.002369543794      0.01296972      0.00640505      0.14715230      0.08322970  ~
+	     5    -112.354327421652     -0.002173074302      0.00219739      0.00127739      0.06415593      0.03612852  ~
+	     6    -112.354531425811     -0.000204004160      0.00016468      0.00006814      0.00080388      0.00046355  ~
+	----------------------------------------------------------------------------------------------------------------
+
+
+2023-07-08:15:12:33,846 INFO     [psi4.optking.optimize:640] Preparing OptimizationResult
+2023-07-08:15:12:33,860 INFO     [psi4.driver.task_planner:283] PLANNING Atomic:  keywords={'SCF__INTS_TOLERANCE': 1e-12, 'function_kwargs': {}}
+2023-07-08:15:12:33,861 INFO     [psi4.driver.driver:1470] Compute hessian(): method=hf, basis=sto-3g, molecule=default, nre=31.085061366825194
+2023-07-08:15:12:34,192 INFO     [psi4.driver.driver:1474] Return hessian(): -112.35453142573591
+2023-07-08:15:12:34,193 INFO     [psi4.driver.driver:1475] [[ 0.19734505 -0.00021216  0.00000000 -0.06487709  0.00028306 -0.00000000 -0.06623398 -0.00003545 -0.00004169
+  -0.06623398 -0.00003545  0.00004169]
+ [-0.00021216  1.40014635  0.00000000  0.00034673 -1.06453082  0.00000000 -0.00006729 -0.16780777 -0.13727772
+  -0.00006729 -0.16780777  0.13727772]
+ [ 0.00000000  0.00000000  0.81077495 -0.00000000  0.00000000 -0.12104522 -0.00007987 -0.14227101 -0.34486487
+   0.00007987  0.14227101 -0.34486487]
+ [-0.06487709  0.00034673 -0.00000000  0.02137117 -0.00036162 -0.00000000  0.02175296  0.00000744 -0.00000175
+   0.02175296  0.00000744  0.00000175]
+ [ 0.00028306 -1.06453082  0.00000000 -0.00036162  1.14412020 -0.00000000  0.00003928 -0.03979469 -0.00888722
+   0.00003928 -0.03979469  0.00888722]
+ [-0.00000000  0.00000000 -0.12104522 -0.00000000 -0.00000000  0.08620029  0.00001499 -0.04535626  0.01742246
+  -0.00001499  0.04535626  0.01742246]
+ [-0.06623398 -0.00006729 -0.00007987  0.02175296  0.00003928  0.00001499  0.02225660  0.00002502  0.00005416
+   0.02222441  0.00000299  0.00001072]
+ [-0.00003545 -0.16780777 -0.14227101  0.00000744 -0.03979469 -0.04535626  0.00002502  0.19392239  0.16689611
+   0.00000299  0.01368007  0.02073116]
+ [-0.00004169 -0.13727772 -0.34486487 -0.00000175 -0.00888722  0.01742246  0.00005416  0.16689611  0.34202587
+  -0.00001072 -0.02073116 -0.01458347]
+ [-0.06623398 -0.00006729  0.00007987  0.02175296  0.00003928 -0.00001499  0.02222441  0.00000299 -0.00001072
+   0.02225660  0.00002502 -0.00005416]
+ [-0.00003545 -0.16780777  0.14227101  0.00000744 -0.03979469  0.04535626  0.00000299  0.01368007 -0.02073116
+   0.00002502  0.19392239 -0.16689611]
+ [ 0.00004169  0.13727772 -0.34486487  0.00000175  0.00888722  0.01742246  0.00001072  0.02073116 -0.01458347
+  -0.00005416 -0.16689611  0.34202587]]
+-----------------------------------------------
+	           Coordinate      Previous         Force          Change          New 
+	           ----------      --------        ------          ------        ------
+	               R(1,2)       1.21076        0.10685        0.00639       1.21715
+	               R(1,3)       1.10502       -0.01780       -0.00350       1.10152
+	               R(1,4)       1.10502       -0.01780       -0.00350       1.10152
+	             B(2,1,3)     123.18977       -0.00015       -0.43453     122.75524
+	             B(2,1,4)     123.18977       -0.00015       -0.43453     122.75524
+	             B(3,1,4)     112.21935        0.00044        2.13740     114.35674
+	           O(2,1,3,4)     -10.97110        0.00046        7.53547      -3.43563
+	           O(3,1,2,4)      12.15321       -0.00057       -8.43121       3.72200
+	           O(4,1,2,3)     -12.15321        0.00057        8.43121      -3.72200
+	-------------------------------------------------------------------------------
+
+	                                 ==> Convergence Check <==                                  
+    
+	Measures of convergence in internal coordinates in au.
+    
+	Criteria marked as inactive (o), active & met (*), and active & unmet ( ).
+
+	----------------------------------------------------------------------------------------------
+	   Step    Total Energy     Delta E     Max Force     RMS Force      Max Disp      RMS Disp   
+	----------------------------------------------------------------------------------------------
+	  Convergence Criteria     1.00e-06 *    3.00e-04 *             o    1.20e-03 *             o
+	----------------------------------------------------------------------------------------------
+	     4    -112.35215435    2.37e-03      1.30e-02      6.41e-03 o    1.47e-01      8.32e-02 o  ~
+	----------------------------------------------------------------------------------------------
+
+Next Geometry in Ang 
+	Fragment 1 (Ang)
+
+	    C  -0.0062037720   0.6123940366  -0.0000000000
+	    O   0.0178866733  -0.6045135760   0.0000000000
+	    H   0.0177727896   1.2089632206   0.9256738929
+	    H   0.0177727896   1.2089632206  -0.9256738929
+
+
+    Structure for next step:
+    Molecular point group: cs
+    Full point group: Cs
+
+    Geometry (in Angstrom), charge = 0, multiplicity = 1:
+
+    C           -0.014450010480     0.608514329601     0.000000000000
+    O            0.009640434851    -0.608393283022     0.000000000000
+    H            0.009526551138     1.205083513587     0.925673892861
+    H            0.009526551138     1.205083513587    -0.925673892861
+
+
+Scratch directory: /tmp/
+gradient() will perform analytic gradient computation.
+   => Libint2 <=
+
+    Primary   basis highest AM E, G, H:  5, 4, 3
+    Auxiliary basis highest AM E, G, H:  6, 5, 4
+    Onebody   basis highest AM E, G, H:  6, 5, 4
+    Solid Harmonics ordering:            gaussian
+
+*** tstart() called on Hidetoshis-Mac-Studio.local
+*** at Sat Jul  8 15:12:33 2023
+
+   => Loading Basis Set <=
+
+    Name: STO-3G
+    Role: ORBITAL
+    Keyword: BASIS
+    atoms 1   entry C          line    61 file /Users/hidetoshi/.pyenv/versions/mambaforge/envs/psi4-v18/share/psi4/basis/sto-3g.gbs 
+    atoms 2   entry O          line    81 file /Users/hidetoshi/.pyenv/versions/mambaforge/envs/psi4-v18/share/psi4/basis/sto-3g.gbs 
+    atoms 3-4 entry H          line    19 file /Users/hidetoshi/.pyenv/versions/mambaforge/envs/psi4-v18/share/psi4/basis/sto-3g.gbs 
+
+
+         ---------------------------------------------------------
+                                   SCF
+               by Justin Turney, Rob Parrish, Andy Simmonett
+                          and Daniel G. A. Smith
+                              RHF Reference
+                        1 Threads,    500 MiB Core
+         ---------------------------------------------------------
+
+  ==> Geometry <==
+
+    Molecular point group: cs
+    Full point group: Cs
+
+    Geometry (in Angstrom), charge = 0, multiplicity = 1:
+
+       Center              X                  Y                   Z               Mass       
+    ------------   -----------------  -----------------  -----------------  -----------------
+         C           -0.014450010480     0.608514329601     0.000000000000    12.000000000000
+         O            0.009640434851    -0.608393283022     0.000000000000    15.994914619570
+         H            0.009526551138     1.205083513587     0.925673892861     1.007825032230
+         H            0.009526551138     1.205083513587    -0.925673892861     1.007825032230
+
+  Running in cs symmetry.
+
+  Rotational constants: A =      9.74997  B =      1.26795  C =      1.12230 [cm^-1]
+  Rotational constants: A = 292296.63557  B =  38012.06253  C =  33645.85598 [MHz]
+  Nuclear repulsion =   31.078052240176895
+
+  Charge       = 0
+  Multiplicity = 1
+  Electrons    = 16
+  Nalpha       = 8
+  Nbeta        = 8
+
+  ==> Algorithm <==
+
+  SCF Algorithm Type is DF.
+  DIIS enabled.
+  MOM disabled.
+  Fractional occupation disabled.
+  Guess Type is READ.
+  Energy threshold   = 1.00e-08
+  Density threshold  = 1.00e-08
+  Integral threshold = 1.00e-12
+
+  ==> Primary Basis <==
+
+  Basis Set: STO-3G
+    Blend: STO-3G
+    Number of shells: 8
+    Number of basis functions: 12
+    Number of Cartesian functions: 12
+    Spherical Harmonics?: true
+    Max angular momentum: 1
+
+   => Loading Basis Set <=
+
+    Name: (STO-3G AUX)
+    Role: JKFIT
+    Keyword: DF_BASIS_SCF
+    atoms 1   entry C          line   198 file /Users/hidetoshi/.pyenv/versions/mambaforge/envs/psi4-v18/share/psi4/basis/def2-universal-jkfit.gbs 
+    atoms 2   entry O          line   318 file /Users/hidetoshi/.pyenv/versions/mambaforge/envs/psi4-v18/share/psi4/basis/def2-universal-jkfit.gbs 
+    atoms 3-4 entry H          line    18 file /Users/hidetoshi/.pyenv/versions/mambaforge/envs/psi4-v18/share/psi4/basis/def2-universal-jkfit.gbs 
+
+   => Loading Basis Set <=
+
+    Name: STO-3G
+    Role: ORBITAL
+    Keyword: BASIS
+    atoms 1   entry C          line    61 file /Users/hidetoshi/.pyenv/versions/mambaforge/envs/psi4-v18/share/psi4/basis/sto-3g.gbs 
+    atoms 2   entry O          line    81 file /Users/hidetoshi/.pyenv/versions/mambaforge/envs/psi4-v18/share/psi4/basis/sto-3g.gbs 
+    atoms 3-4 entry H          line    19 file /Users/hidetoshi/.pyenv/versions/mambaforge/envs/psi4-v18/share/psi4/basis/sto-3g.gbs 
+
+  Reading orbitals from file /tmp/formaldehyde_Mulliken.default.88392.180.npy, no projection.
+
+  ==> Integral Setup <==
+
+  DFHelper Memory: AOs need 0.000 GiB; user supplied 0.366 GiB. 
+  Using in-core AOs.
+
+  ==> MemDFJK: Density-Fitted J/K Matrices <==
+
+    J tasked:                   Yes
+    K tasked:                   Yes
+    wK tasked:                   No
+    OpenMP threads:               1
+    Memory [MiB]:               375
+    Algorithm:                 Core
+    Schwarz Cutoff:           1E-12
+    Mask sparsity (%):       0.0000
+    Fitting Condition:        1E-10
+
+   => Auxiliary Basis Set <=
+
+  Basis Set: (STO-3G AUX)
+    Blend: DEF2-UNIVERSAL-JKFIT
+    Number of shells: 62
+    Number of basis functions: 188
+    Number of Cartesian functions: 222
+    Spherical Harmonics?: true
+    Max angular momentum: 4
+
+  Minimum eigenvalue in the overlap matrix is 2.3590149424E-01.
+  Reciprocal condition number of the overlap matrix is 1.2078629756E-01.
+    Using symmetric orthogonalization.
+
+  ==> Pre-Iterations <==
+
+  SCF Guess: Orbitals guess was supplied from a previous computation.
+
+   -------------------------------------------------------
+    Irrep   Nso     Nmo     Nalpha   Nbeta   Ndocc  Nsocc
+   -------------------------------------------------------
+     A'         9       9       6       6       6       0
+     A"         3       3       2       2       2       0
+   -------------------------------------------------------
+    Total      12      12       8       8       8       0
+   -------------------------------------------------------
+
+  ==> Iterations <==
+
+                           Total Energy        Delta E     RMS |[F,P]|
+
+   @DF-RHF iter   0:  -112.35084840812877   -1.12351e+02   8.98664e-03 
+   @DF-RHF iter   1:  -112.35410601261894   -3.25760e-03   1.43535e-03 DIIS/ADIIS
+   @DF-RHF iter   2:  -112.35429737025200   -1.91358e-04   5.23907e-04 DIIS/ADIIS
+   @DF-RHF iter   3:  -112.35432259272338   -2.52225e-05   2.54178e-04 DIIS/ADIIS
+   @DF-RHF iter   4:  -112.35432699464202   -4.40192e-06   4.21026e-05 DIIS
+   @DF-RHF iter   5:  -112.35432735497206   -3.60330e-07   1.70366e-05 DIIS
+   @DF-RHF iter   6:  -112.35432742159961   -6.66275e-08   7.18786e-07 DIIS
+   @DF-RHF iter   7:  -112.35432742165150   -5.18980e-11   5.82083e-08 DIIS
+   @DF-RHF iter   8:  -112.35432742165180   -2.98428e-13   1.39477e-08 DIIS
+   @DF-RHF iter   9:  -112.35432742165182   -1.42109e-14   3.15350e-09 DIIS
+  Energy and wave function converged.
+
+
+  ==> Post-Iterations <==
+
+    Orbital Energies [Eh]
+    ---------------------
+
+    Doubly Occupied:                                                      
+
+       1Ap   -20.312973     2Ap   -11.125125     3Ap    -1.337216  
+       4Ap    -0.807837     1App   -0.632532     5Ap    -0.545524  
+       6Ap    -0.442955     2App   -0.354370  
+
+    Virtual:                                                              
+
+       7Ap     0.281513     8Ap     0.629212     3App    0.733605  
+       9Ap     0.912429  
+
+    Final Occupation by Irrep:
+             Ap   App 
+    DOCC [     6,    2 ]
+    NA   [     6,    2 ]
+    NB   [     6,    2 ]
+
+  @DF-RHF Final Energy:  -112.35432742165182
+
+   => Energetics <=
+
+    Nuclear Repulsion Energy =             31.0780522401768948
+    One-Electron Energy =                -215.7476966789232051
+    Two-Electron Energy =                  72.3153170170944861
+    Total Energy =                       -112.3543274216518171
+
+Computation Completed
+
+
+Properties will be evaluated at   0.000000,   0.000000,   0.000000 [a0]
+
+Properties computed using the SCF density matrix
+
+
+ Multipole Moments:
+
+ ------------------------------------------------------------------------------------
+     Multipole            Electronic (a.u.)      Nuclear  (a.u.)        Total (a.u.)
+ ------------------------------------------------------------------------------------
+
+ L = 1.  Multiply by 2.5417464519 to convert [e a0] to [Debye]
+ Dipole X            :         -0.0194798            0.0179080           -0.0015718
+ Dipole Y            :         -1.6521528            2.2565347            0.6043820
+ Dipole Z            :          0.0000000            0.0000000            0.0000000
+ Magnitude           :                                                    0.6043840
+
+ ------------------------------------------------------------------------------------
+
+*** tstop() called on Hidetoshis-Mac-Studio.local at Sat Jul  8 15:12:33 2023
+Module time:
+	user time   =       0.10 seconds =       0.00 minutes
+	system time =       0.01 seconds =       0.00 minutes
+	total time  =          0 seconds =       0.00 minutes
+Total time:
+	user time   =       0.84 seconds =       0.01 minutes
+	system time =       0.07 seconds =       0.00 minutes
+	total time  =          1 seconds =       0.02 minutes
+
+*** tstart() called on Hidetoshis-Mac-Studio.local
+*** at Sat Jul  8 15:12:33 2023
+
+
+         ------------------------------------------------------------
+                                   SCF GRAD                          
+                          Rob Parrish, Justin Turney,                
+                       Andy Simmonett, and Alex Sokolov              
+         ------------------------------------------------------------
+
+  ==> Geometry <==
+
+    Molecular point group: cs
+    Full point group: Cs
+
+    Geometry (in Angstrom), charge = 0, multiplicity = 1:
+
+       Center              X                  Y                   Z               Mass       
+    ------------   -----------------  -----------------  -----------------  -----------------
+         C           -0.014450010480     0.608514329601     0.000000000000    12.000000000000
+         O            0.009640434851    -0.608393283022     0.000000000000    15.994914619570
+         H            0.009526551138     1.205083513587     0.925673892861     1.007825032230
+         H            0.009526551138     1.205083513587    -0.925673892861     1.007825032230
+
+  Nuclear repulsion =   31.078052240176895
+
+  ==> Basis Set <==
+
+  Basis Set: STO-3G
+    Blend: STO-3G
+    Number of shells: 8
+    Number of basis functions: 12
+    Number of Cartesian functions: 12
+    Spherical Harmonics?: true
+    Max angular momentum: 1
+
+  ==> DFJKGrad: Density-Fitted SCF Gradients <==
+
+    Gradient:                    1
+    J tasked:                  Yes
+    K tasked:                  Yes
+    wK tasked:                  No
+    OpenMP threads:              1
+    Integrals threads:           1
+    Memory [MiB]:              375
+    Schwarz Cutoff:          1E-12
+    Fitting Condition:       1E-10
+
+   => Auxiliary Basis Set <=
+
+  Basis Set: (STO-3G AUX)
+    Blend: DEF2-UNIVERSAL-JKFIT
+    Number of shells: 62
+    Number of basis functions: 188
+    Number of Cartesian functions: 222
+    Spherical Harmonics?: true
+    Max angular momentum: 4
+
+
+  -Total Gradient:
+     Atom            X                  Y                   Z
+    ------   -----------------  -----------------  -----------------
+       1       -0.008963318525     0.000256741160     0.000000000000
+       2        0.002952056610    -0.000787551056     0.000000000000
+       3        0.003005630957     0.000265404948    -0.000140288195
+       4        0.003005630957     0.000265404948     0.000140288195
+
+
+*** tstop() called on Hidetoshis-Mac-Studio.local at Sat Jul  8 15:12:33 2023
+Module time:
+	user time   =       0.02 seconds =       0.00 minutes
+	system time =       0.00 seconds =       0.00 minutes
+	total time  =          0 seconds =       0.00 minutes
+Total time:
+	user time   =       0.86 seconds =       0.01 minutes
+	system time =       0.07 seconds =       0.00 minutes
+	total time  =          1 seconds =       0.02 minutes
+
+    			-----------------------------------------
+
+    			 OPTKING 3.0: for geometry optimizations 
+
+    			     By R.A. King, Bethel University     
+
+    			        with contributions from          
+
+    			    A.V. Copan, J. Cayton, A. Heide      
+
+    			-----------------------------------------
+
+    
+	                            ===> Fragment 1 <== 
+
+	 Z (Atomic Numbers)          Masses                          Geom                  
+	       6.000000            12.000000         -0.02730656  1.14992543  0.00000000   
+	       8.000000            15.994915          0.01821778 -1.14969668  0.00000000   
+	       1.000000             1.007825          0.01800257  2.27727780  1.74927014   
+	       1.000000             1.007825          0.01800257  2.27727780 -1.74927014   
+
+	 - Coordinate -           - BOHR/RAD -       - ANG/DEG -
+	 R(1,2)           =         2.300073           1.217146
+	 R(1,3)           =         2.081567           1.101518
+	 R(1,4)           =         2.081567           1.101518
+	 B(2,1,3)         =         2.142483         122.755236
+	 B(2,1,4)         =         2.142483         122.755236
+	 B(3,1,4)         =         1.995902         114.356742
+	 O(2,1,3,4)       =        -0.059963          -3.435626
+	 O(3,1,2,4)       =         0.064961           3.722002
+	 O(4,1,2,3)       =        -0.064961          -3.722002
+
+
+	        --- Internal Coordinate Step in ANG or DEG, aJ/ANG or AJ/DEG ---
+	-------------------------------------------------------------------------------
+	           Coordinate      Previous         Force          Change          New 
+	           ----------      --------        ------          ------        ------
+	               R(1,2)       1.21715       -0.00697       -0.00035       1.21680
+	               R(1,3)       1.10152       -0.00075       -0.00005       1.10147
+	               R(1,4)       1.10152       -0.00075       -0.00005       1.10147
+	             B(2,1,3)     122.75524       -0.00001       -0.01486     122.74038
+	             B(2,1,4)     122.75524       -0.00001       -0.01486     122.74038
+	             B(3,1,4)     114.35674        0.00004        0.16248     114.51922
+	           O(2,1,3,4)      -3.43563        0.00015        3.39297      -0.04265
+	           O(3,1,2,4)       3.72200       -0.00017       -3.67586       0.04614
+	           O(4,1,2,3)      -3.72200        0.00017        3.67586      -0.04614
+	-------------------------------------------------------------------------------
+
+	                                 ==> Convergence Check <==                                  
+    
+	Measures of convergence in internal coordinates in au.
+    
+	Criteria marked as inactive (o), active & met (*), and active & unmet ( ).
+
+	----------------------------------------------------------------------------------------------
+	   Step    Total Energy     Delta E     Max Force     RMS Force      Max Disp      RMS Disp   
+	----------------------------------------------------------------------------------------------
+	  Convergence Criteria     1.00e-06 *    3.00e-04 *             o    1.20e-03 *             o
+	----------------------------------------------------------------------------------------------
+	     5    -112.35432742   -2.17e-03      2.20e-03      1.28e-03 o    6.42e-02      3.61e-02 o  ~
+	----------------------------------------------------------------------------------------------
+
+Next Geometry in Ang 
+	Fragment 1 (Ang)
+
+	    C   0.0033367519   0.6089144950  -0.0000000000
+	    O   0.0037944039  -0.6078811912   0.0000000000
+	    H   0.0035561854   1.2046273850   0.9264810572
+	    H   0.0035561854   1.2046273850  -0.9264810572
+
+
+    Structure for next step:
+    Molecular point group: cs
+    Full point group: Cs
+
+    Geometry (in Angstrom), charge = 0, multiplicity = 1:
+
+    C           -0.000258655807     0.608512188189     0.000000000000
+    O            0.000198996252    -0.608283497978     0.000000000000
+    H           -0.000039222274     1.204225078143     0.926481057168
+    H           -0.000039222274     1.204225078143    -0.926481057168
+
+
+Scratch directory: /tmp/
+gradient() will perform analytic gradient computation.
+   => Libint2 <=
+
+    Primary   basis highest AM E, G, H:  5, 4, 3
+    Auxiliary basis highest AM E, G, H:  6, 5, 4
+    Onebody   basis highest AM E, G, H:  6, 5, 4
+    Solid Harmonics ordering:            gaussian
+
+*** tstart() called on Hidetoshis-Mac-Studio.local
+*** at Sat Jul  8 15:12:33 2023
+
+   => Loading Basis Set <=
+
+    Name: STO-3G
+    Role: ORBITAL
+    Keyword: BASIS
+    atoms 1   entry C          line    61 file /Users/hidetoshi/.pyenv/versions/mambaforge/envs/psi4-v18/share/psi4/basis/sto-3g.gbs 
+    atoms 2   entry O          line    81 file /Users/hidetoshi/.pyenv/versions/mambaforge/envs/psi4-v18/share/psi4/basis/sto-3g.gbs 
+    atoms 3-4 entry H          line    19 file /Users/hidetoshi/.pyenv/versions/mambaforge/envs/psi4-v18/share/psi4/basis/sto-3g.gbs 
+
+
+         ---------------------------------------------------------
+                                   SCF
+               by Justin Turney, Rob Parrish, Andy Simmonett
+                          and Daniel G. A. Smith
+                              RHF Reference
+                        1 Threads,    500 MiB Core
+         ---------------------------------------------------------
+
+  ==> Geometry <==
+
+    Molecular point group: cs
+    Full point group: Cs
+
+    Geometry (in Angstrom), charge = 0, multiplicity = 1:
+
+       Center              X                  Y                   Z               Mass       
+    ------------   -----------------  -----------------  -----------------  -----------------
+         C           -0.000258655807     0.608512188189     0.000000000000    12.000000000000
+         O            0.000198996252    -0.608283497978     0.000000000000    15.994914619570
+         H           -0.000039222274     1.204225078143     0.926481057168     1.007825032230
+         H           -0.000039222274     1.204225078143    -0.926481057168     1.007825032230
+
+  Running in cs symmetry.
+
+  Rotational constants: A =      9.74335  B =      1.26895  C =      1.12273 [cm^-1]
+  Rotational constants: A = 292098.21519  B =  38042.13594  C =  33658.53459 [MHz]
+  Nuclear repulsion =   31.085061366825194
+
+  Charge       = 0
+  Multiplicity = 1
+  Electrons    = 16
+  Nalpha       = 8
+  Nbeta        = 8
+
+  ==> Algorithm <==
+
+  SCF Algorithm Type is DF.
+  DIIS enabled.
+  MOM disabled.
+  Fractional occupation disabled.
+  Guess Type is READ.
+  Energy threshold   = 1.00e-08
+  Density threshold  = 1.00e-08
+  Integral threshold = 1.00e-12
+
+  ==> Primary Basis <==
+
+  Basis Set: STO-3G
+    Blend: STO-3G
+    Number of shells: 8
+    Number of basis functions: 12
+    Number of Cartesian functions: 12
+    Spherical Harmonics?: true
+    Max angular momentum: 1
+
+   => Loading Basis Set <=
+
+    Name: (STO-3G AUX)
+    Role: JKFIT
+    Keyword: DF_BASIS_SCF
+    atoms 1   entry C          line   198 file /Users/hidetoshi/.pyenv/versions/mambaforge/envs/psi4-v18/share/psi4/basis/def2-universal-jkfit.gbs 
+    atoms 2   entry O          line   318 file /Users/hidetoshi/.pyenv/versions/mambaforge/envs/psi4-v18/share/psi4/basis/def2-universal-jkfit.gbs 
+    atoms 3-4 entry H          line    18 file /Users/hidetoshi/.pyenv/versions/mambaforge/envs/psi4-v18/share/psi4/basis/def2-universal-jkfit.gbs 
+
+   => Loading Basis Set <=
+
+    Name: STO-3G
+    Role: ORBITAL
+    Keyword: BASIS
+    atoms 1   entry C          line    61 file /Users/hidetoshi/.pyenv/versions/mambaforge/envs/psi4-v18/share/psi4/basis/sto-3g.gbs 
+    atoms 2   entry O          line    81 file /Users/hidetoshi/.pyenv/versions/mambaforge/envs/psi4-v18/share/psi4/basis/sto-3g.gbs 
+    atoms 3-4 entry H          line    19 file /Users/hidetoshi/.pyenv/versions/mambaforge/envs/psi4-v18/share/psi4/basis/sto-3g.gbs 
+
+  Reading orbitals from file /tmp/formaldehyde_Mulliken.default.88392.180.npy, no projection.
+
+  ==> Integral Setup <==
+
+  DFHelper Memory: AOs need 0.000 GiB; user supplied 0.366 GiB. 
+  Using in-core AOs.
+
+  ==> MemDFJK: Density-Fitted J/K Matrices <==
+
+    J tasked:                   Yes
+    K tasked:                   Yes
+    wK tasked:                   No
+    OpenMP threads:               1
+    Memory [MiB]:               375
+    Algorithm:                 Core
+    Schwarz Cutoff:           1E-12
+    Mask sparsity (%):       0.0000
+    Fitting Condition:        1E-10
+
+   => Auxiliary Basis Set <=
+
+  Basis Set: (STO-3G AUX)
+    Blend: DEF2-UNIVERSAL-JKFIT
+    Number of shells: 62
+    Number of basis functions: 188
+    Number of Cartesian functions: 222
+    Spherical Harmonics?: true
+    Max angular momentum: 4
+
+  Minimum eigenvalue in the overlap matrix is 2.3580272753E-01.
+  Reciprocal condition number of the overlap matrix is 1.2071995339E-01.
+    Using symmetric orthogonalization.
+
+  ==> Pre-Iterations <==
+
+  SCF Guess: Orbitals guess was supplied from a previous computation.
+
+   -------------------------------------------------------
+    Irrep   Nso     Nmo     Nalpha   Nbeta   Ndocc  Nsocc
+   -------------------------------------------------------
+     A'         9       9       6       6       6       0
+     A"         3       3       2       2       2       0
+   -------------------------------------------------------
+    Total      12      12       8       8       8       0
+   -------------------------------------------------------
+
+  ==> Iterations <==
+
+                           Total Energy        Delta E     RMS |[F,P]|
+
+   @DF-RHF iter   0:  -112.35436967588464   -1.12354e+02   3.77254e-03 
+   @DF-RHF iter   1:  -112.35449179757364   -1.22122e-04   5.92394e-04 DIIS/ADIIS
+   @DF-RHF iter   2:  -112.35452635327505   -3.45557e-05   2.01295e-04 DIIS/ADIIS
+   @DF-RHF iter   3:  -112.35453125377094   -4.90050e-06   3.52219e-05 DIIS
+   @DF-RHF iter   4:  -112.35453136101123   -1.07240e-07   1.71512e-05 DIIS
+   @DF-RHF iter   5:  -112.35453142187650   -6.08653e-08   4.27542e-06 DIIS
+   @DF-RHF iter   6:  -112.35453142580619   -3.92969e-09   2.32903e-07 DIIS
+   @DF-RHF iter   7:  -112.35453142581144   -5.25802e-12   6.24202e-09 DIIS
+  Energy and wave function converged.
+
+
+  ==> Post-Iterations <==
+
+    Orbital Energies [Eh]
+    ---------------------
+
+    Doubly Occupied:                                                      
+
+       1Ap   -20.312899     2Ap   -11.125206     3Ap    -1.337399  
+       4Ap    -0.807731     1App   -0.632836     5Ap    -0.545498  
+       6Ap    -0.443125     2App   -0.354372  
+
+    Virtual:                                                              
+
+       7Ap     0.281992     8Ap     0.628524     3App    0.734298  
+       9Ap     0.912902  
+
+    Final Occupation by Irrep:
+             Ap   App 
+    DOCC [     6,    2 ]
+    NA   [     6,    2 ]
+    NB   [     6,    2 ]
+
+  @DF-RHF Final Energy:  -112.35453142581144
+
+   => Energetics <=
+
+    Nuclear Repulsion Energy =             31.0850613668251938
+    One-Electron Energy =                -215.7610524794288835
+    Two-Electron Energy =                  72.3214596867922523
+    Total Energy =                       -112.3545314258114445
+
+Computation Completed
+
+
+Properties will be evaluated at   0.000000,   0.000000,   0.000000 [a0]
+
+Properties computed using the SCF density matrix
+
+
+ Multipole Moments:
+
+ ------------------------------------------------------------------------------------
+     Multipole            Electronic (a.u.)      Nuclear  (a.u.)        Total (a.u.)
+ ------------------------------------------------------------------------------------
+
+ L = 1.  Multiply by 2.5417464519 to convert [e a0] to [Debye]
+ Dipole X            :         -0.0000260           -0.0000726           -0.0000986
+ Dipole Y            :         -1.6503736            2.2549257            0.6045521
+ Dipole Z            :          0.0000000            0.0000000            0.0000000
+ Magnitude           :                                                    0.6045521
+
+ ------------------------------------------------------------------------------------
+
+*** tstop() called on Hidetoshis-Mac-Studio.local at Sat Jul  8 15:12:33 2023
+Module time:
+	user time   =       0.10 seconds =       0.00 minutes
+	system time =       0.00 seconds =       0.00 minutes
+	total time  =          0 seconds =       0.00 minutes
+Total time:
+	user time   =       0.99 seconds =       0.02 minutes
+	system time =       0.07 seconds =       0.00 minutes
+	total time  =          1 seconds =       0.02 minutes
+
+*** tstart() called on Hidetoshis-Mac-Studio.local
+*** at Sat Jul  8 15:12:33 2023
+
+
+         ------------------------------------------------------------
+                                   SCF GRAD                          
+                          Rob Parrish, Justin Turney,                
+                       Andy Simmonett, and Alex Sokolov              
+         ------------------------------------------------------------
+
+  ==> Geometry <==
+
+    Molecular point group: cs
+    Full point group: Cs
+
+    Geometry (in Angstrom), charge = 0, multiplicity = 1:
+
+       Center              X                  Y                   Z               Mass       
+    ------------   -----------------  -----------------  -----------------  -----------------
+         C           -0.000258655807     0.608512188189     0.000000000000    12.000000000000
+         O            0.000198996252    -0.608283497978     0.000000000000    15.994914619570
+         H           -0.000039222274     1.204225078143     0.926481057168     1.007825032230
+         H           -0.000039222274     1.204225078143    -0.926481057168     1.007825032230
+
+  Nuclear repulsion =   31.085061366825194
+
+  ==> Basis Set <==
+
+  Basis Set: STO-3G
+    Blend: STO-3G
+    Number of shells: 8
+    Number of basis functions: 12
+    Number of Cartesian functions: 12
+    Spherical Harmonics?: true
+    Max angular momentum: 1
+
+  ==> DFJKGrad: Density-Fitted SCF Gradients <==
+
+    Gradient:                    1
+    J tasked:                  Yes
+    K tasked:                  Yes
+    wK tasked:                  No
+    OpenMP threads:              1
+    Integrals threads:           1
+    Memory [MiB]:              375
+    Schwarz Cutoff:          1E-12
+    Fitting Condition:       1E-10
+
+   => Auxiliary Basis Set <=
+
+  Basis Set: (STO-3G AUX)
+    Blend: DEF2-UNIVERSAL-JKFIT
+    Number of shells: 62
+    Number of basis functions: 188
+    Number of Cartesian functions: 222
+    Spherical Harmonics?: true
+    Max angular momentum: 4
+
+
+  -Total Gradient:
+     Atom            X                  Y                   Z
+    ------   -----------------  -----------------  -----------------
+       1       -0.000111038611     0.000055145595     0.000000000000
+       2        0.000036521224    -0.000164662527     0.000000000000
+       3        0.000037258693     0.000054758466     0.000056329209
+       4        0.000037258693     0.000054758466    -0.000056329209
+
+
+*** tstop() called on Hidetoshis-Mac-Studio.local at Sat Jul  8 15:12:33 2023
+Module time:
+	user time   =       0.02 seconds =       0.00 minutes
+	system time =       0.01 seconds =       0.00 minutes
+	total time  =          0 seconds =       0.00 minutes
+Total time:
+	user time   =       1.01 seconds =       0.02 minutes
+	system time =       0.08 seconds =       0.00 minutes
+	total time  =          1 seconds =       0.02 minutes
+
+    			-----------------------------------------
+
+    			 OPTKING 3.0: for geometry optimizations 
+
+    			     By R.A. King, Bethel University     
+
+    			        with contributions from          
+
+    			    A.V. Copan, J. Cayton, A. Heide      
+
+    			-----------------------------------------
+
+    
+	                            ===> Fragment 1 <== 
+
+	 Z (Atomic Numbers)          Masses                          Geom                  
+	       6.000000            12.000000         -0.00048879  1.14992138  0.00000000   
+	       8.000000            15.994915          0.00037605 -1.14948922  0.00000000   
+	       1.000000             1.007825         -0.00007412  2.27565559  1.75079546   
+	       1.000000             1.007825         -0.00007412  2.27565559 -1.75079546   
+
+	 - Coordinate -           - BOHR/RAD -       - ANG/DEG -
+	 R(1,2)           =         2.299411           1.216796
+	 R(1,3)           =         2.081481           1.101472
+	 R(1,4)           =         2.081481           1.101472
+	 B(2,1,3)         =         2.142224         122.740378
+	 B(2,1,4)         =         2.142224         122.740378
+	 B(3,1,4)         =         1.998738         114.519224
+	 O(2,1,3,4)       =        -0.000744          -0.042655
+	 O(3,1,2,4)       =         0.000805           0.046138
+	 O(4,1,2,3)       =        -0.000805          -0.046138
+
+
+	        --- Internal Coordinate Step in ANG or DEG, aJ/ANG or AJ/DEG ---
+	-------------------------------------------------------------------------------
+	           Coordinate      Previous         Force          Change          New 
+	           ----------      --------        ------          ------        ------
+	               R(1,2)       1.21680       -0.00136       -0.00007       1.21672
+	               R(1,3)       1.10147       -0.00063       -0.00008       1.10139
+	               R(1,4)       1.10147       -0.00063       -0.00008       1.10139
+	             B(2,1,3)     122.74038       -0.00000       -0.00334     122.73703
+	             B(2,1,4)     122.74038       -0.00000       -0.00334     122.73703
+	             B(3,1,4)     114.51922        0.00000        0.00671     114.52593
+	           O(2,1,3,4)      -0.04265        0.00000        0.04258      -0.00007
+	           O(3,1,2,4)       0.04614       -0.00000       -0.04606       0.00008
+	           O(4,1,2,3)      -0.04614        0.00000        0.04606      -0.00008
+	-------------------------------------------------------------------------------
+
+	                                 ==> Convergence Check <==                                  
+    
+	Measures of convergence in internal coordinates in au.
+    
+	Criteria marked as inactive (o), active & met (*), and active & unmet ( ).
+
+	----------------------------------------------------------------------------------------------
+	   Step    Total Energy     Delta E     Max Force     RMS Force      Max Disp      RMS Disp   
+	----------------------------------------------------------------------------------------------
+	  Convergence Criteria     1.00e-06 *    3.00e-04 *             o    1.20e-03 *             o
+	----------------------------------------------------------------------------------------------
+	     6    -112.35453143   -2.04e-04      1.65e-04 *    6.81e-05 o    8.04e-04 *    4.64e-04 o  ~
+	----------------------------------------------------------------------------------------------
+
+Next Geometry in Ang 
+	Fragment 1 (Ang)
+
+	    C  -0.0000357524   0.6085442001   0.0000000000
+	    O   0.0001257254  -0.6081802433  -0.0000000000
+	    H  -0.0001140386   1.2041574449   0.9264452391
+	    H  -0.0001140386   1.2041574449  -0.9264452391
+
+
+    Final optimized geometry and variables:
+    Molecular point group: cs
+    Full point group: Cs
+
+    Geometry (in Angstrom), charge = 0, multiplicity = 1:
+
+    C           -0.000258655807     0.608512188189     0.000000000000
+    O            0.000198996252    -0.608283497978     0.000000000000
+    H           -0.000039222274     1.204225078143     0.926481057168
+    H           -0.000039222274     1.204225078143    -0.926481057168
+
+hessian() using ref_gradient to assess stationary point.
+
+  Based on options and gradient (rms=7.01E-05), recommend projecting translations and projecting rotations.
+hessian() will perform analytic frequency computation.
+   => Libint2 <=
+
+    Primary   basis highest AM E, G, H:  5, 4, 3
+    Auxiliary basis highest AM E, G, H:  6, 5, 4
+    Onebody   basis highest AM E, G, H:  6, 5, 4
+    Solid Harmonics ordering:            gaussian
+
+*** tstart() called on Hidetoshis-Mac-Studio.local
+*** at Sat Jul  8 15:12:33 2023
+
+   => Loading Basis Set <=
+
+    Name: STO-3G
+    Role: ORBITAL
+    Keyword: BASIS
+    atoms 1   entry C          line    61 file /Users/hidetoshi/.pyenv/versions/mambaforge/envs/psi4-v18/share/psi4/basis/sto-3g.gbs 
+    atoms 2   entry O          line    81 file /Users/hidetoshi/.pyenv/versions/mambaforge/envs/psi4-v18/share/psi4/basis/sto-3g.gbs 
+    atoms 3-4 entry H          line    19 file /Users/hidetoshi/.pyenv/versions/mambaforge/envs/psi4-v18/share/psi4/basis/sto-3g.gbs 
+
+
+         ---------------------------------------------------------
+                                   SCF
+               by Justin Turney, Rob Parrish, Andy Simmonett
+                          and Daniel G. A. Smith
+                              RHF Reference
+                        1 Threads,    500 MiB Core
+         ---------------------------------------------------------
+
+  ==> Geometry <==
+
+    Molecular point group: cs
+    Full point group: Cs
+
+    Geometry (in Angstrom), charge = 0, multiplicity = 1:
+
+       Center              X                  Y                   Z               Mass       
+    ------------   -----------------  -----------------  -----------------  -----------------
+         C           -0.000258655807     0.608512188189     0.000000000000    12.000000000000
+         O            0.000198996252    -0.608283497978     0.000000000000    15.994914619570
+         H           -0.000039222274     1.204225078143     0.926481057168     1.007825032230
+         H           -0.000039222274     1.204225078143    -0.926481057168     1.007825032230
+
+  Running in cs symmetry.
+
+  Rotational constants: A =      9.74335  B =      1.26895  C =      1.12273 [cm^-1]
+  Rotational constants: A = 292098.21519  B =  38042.13594  C =  33658.53459 [MHz]
+  Nuclear repulsion =   31.085061366825194
+
+  Charge       = 0
+  Multiplicity = 1
+  Electrons    = 16
+  Nalpha       = 8
+  Nbeta        = 8
+
+  ==> Algorithm <==
+
+  SCF Algorithm Type is DF.
+  DIIS enabled.
+  MOM disabled.
+  Fractional occupation disabled.
+  Guess Type is SAD.
+  Energy threshold   = 1.00e-08
+  Density threshold  = 1.00e-08
+  Integral threshold = 1.00e-12
+
+  ==> Primary Basis <==
+
+  Basis Set: STO-3G
+    Blend: STO-3G
+    Number of shells: 8
+    Number of basis functions: 12
+    Number of Cartesian functions: 12
+    Spherical Harmonics?: true
+    Max angular momentum: 1
+
+   => Loading Basis Set <=
+
+    Name: (STO-3G AUX)
+    Role: JKFIT
+    Keyword: DF_BASIS_SCF
+    atoms 1   entry C          line   198 file /Users/hidetoshi/.pyenv/versions/mambaforge/envs/psi4-v18/share/psi4/basis/def2-universal-jkfit.gbs 
+    atoms 2   entry O          line   318 file /Users/hidetoshi/.pyenv/versions/mambaforge/envs/psi4-v18/share/psi4/basis/def2-universal-jkfit.gbs 
+    atoms 3-4 entry H          line    18 file /Users/hidetoshi/.pyenv/versions/mambaforge/envs/psi4-v18/share/psi4/basis/def2-universal-jkfit.gbs 
+
+  ==> Integral Setup <==
+
+  DFHelper Memory: AOs need 0.000 GiB; user supplied 0.366 GiB. 
+  Using in-core AOs.
+
+  ==> MemDFJK: Density-Fitted J/K Matrices <==
+
+    J tasked:                   Yes
+    K tasked:                   Yes
+    wK tasked:                   No
+    OpenMP threads:               1
+    Memory [MiB]:               375
+    Algorithm:                 Core
+    Schwarz Cutoff:           1E-12
+    Mask sparsity (%):       0.0000
+    Fitting Condition:        1E-10
+
+   => Auxiliary Basis Set <=
+
+  Basis Set: (STO-3G AUX)
+    Blend: DEF2-UNIVERSAL-JKFIT
+    Number of shells: 62
+    Number of basis functions: 188
+    Number of Cartesian functions: 222
+    Spherical Harmonics?: true
+    Max angular momentum: 4
+
+  Minimum eigenvalue in the overlap matrix is 2.3580272753E-01.
+  Reciprocal condition number of the overlap matrix is 1.2071995339E-01.
+    Using symmetric orthogonalization.
+
+  ==> Pre-Iterations <==
+
+  SCF Guess: Superposition of Atomic Densities via on-the-fly atomic UHF (no occupation information).
+
+   -------------------------
+    Irrep   Nso     Nmo    
+   -------------------------
+     A'         9       9 
+     A"         3       3 
+   -------------------------
+    Total      12      12
+   -------------------------
+
+  ==> Iterations <==
+
+                           Total Energy        Delta E     RMS |[F,P]|
+
+   @DF-RHF iter SAD:  -110.94867816199546   -1.10949e+02   0.00000e+00 
+   @DF-RHF iter   1:  -112.23394508891626   -1.28527e+00   4.32626e-02 DIIS/ADIIS
+   @DF-RHF iter   2:  -112.30612172564089   -7.21766e-02   3.23261e-02 DIIS/ADIIS
+   @DF-RHF iter   3:  -112.35301450218083   -4.68928e-02   3.44099e-03 DIIS/ADIIS
+   @DF-RHF iter   4:  -112.35441964885132   -1.40515e-03   9.10746e-04 DIIS/ADIIS
+   @DF-RHF iter   5:  -112.35452157481841   -1.01926e-04   2.90872e-04 DIIS/ADIIS
+   @DF-RHF iter   6:  -112.35453134505958   -9.77024e-06   2.89067e-05 DIIS
+   @DF-RHF iter   7:  -112.35453142526688   -8.02073e-08   2.75459e-06 DIIS
+   @DF-RHF iter   8:  -112.35453142572891   -4.62023e-10   3.23938e-07 DIIS
+   @DF-RHF iter   9:  -112.35453142573586   -6.94911e-12   2.02247e-08 DIIS
+   @DF-RHF iter  10:  -112.35453142573591   -5.68434e-14   2.30660e-09 DIIS
+  Energy and wave function converged.
+
+
+  ==> Post-Iterations <==
+
+    Orbital Energies [Eh]
+    ---------------------
+
+    Doubly Occupied:                                                      
+
+       1Ap   -20.312899     2Ap   -11.125206     3Ap    -1.337399  
+       4Ap    -0.807731     1App   -0.632836     5Ap    -0.545498  
+       6Ap    -0.443125     2App   -0.354372  
+
+    Virtual:                                                              
+
+       7Ap     0.281992     8Ap     0.628524     3App    0.734298  
+       9Ap     0.912902  
+
+    Final Occupation by Irrep:
+             Ap   App 
+    DOCC [     6,    2 ]
+    NA   [     6,    2 ]
+    NB   [     6,    2 ]
+
+  @DF-RHF Final Energy:  -112.35453142573591
+
+   => Energetics <=
+
+    Nuclear Repulsion Energy =             31.0850613668251938
+    One-Electron Energy =                -215.7610524889857686
+    Two-Electron Energy =                  72.3214596964246681
+    Total Energy =                       -112.3545314257359138
+
+Computation Completed
+
+
+Properties will be evaluated at   0.000000,   0.000000,   0.000000 [a0]
+
+Properties computed using the SCF density matrix
+
+
+ Multipole Moments:
+
+ ------------------------------------------------------------------------------------
+     Multipole            Electronic (a.u.)      Nuclear  (a.u.)        Total (a.u.)
+ ------------------------------------------------------------------------------------
+
+ L = 1.  Multiply by 2.5417464519 to convert [e a0] to [Debye]
+ Dipole X            :         -0.0000260           -0.0000726           -0.0000986
+ Dipole Y            :         -1.6503736            2.2549257            0.6045522
+ Dipole Z            :          0.0000000            0.0000000            0.0000000
+ Magnitude           :                                                    0.6045522
+
+ ------------------------------------------------------------------------------------
+
+*** tstop() called on Hidetoshis-Mac-Studio.local at Sat Jul  8 15:12:34 2023
+Module time:
+	user time   =       0.14 seconds =       0.00 minutes
+	system time =       0.00 seconds =       0.00 minutes
+	total time  =          1 seconds =       0.02 minutes
+Total time:
+	user time   =       1.18 seconds =       0.02 minutes
+	system time =       0.08 seconds =       0.00 minutes
+	total time  =          2 seconds =       0.03 minutes
+
+*** tstart() called on Hidetoshis-Mac-Studio.local
+*** at Sat Jul  8 15:12:34 2023
+
+
+         ------------------------------------------------------------
+                                   SCF HESS                          
+                          Rob Parrish, Justin Turney,                
+                       Andy Simmonett, and Alex Sokolov              
+         ------------------------------------------------------------
+
+  ==> Geometry <==
+
+    Molecular point group: cs
+    Full point group: Cs
+
+    Geometry (in Angstrom), charge = 0, multiplicity = 1:
+
+       Center              X                  Y                   Z               Mass       
+    ------------   -----------------  -----------------  -----------------  -----------------
+         C           -0.000258655807     0.608512188189     0.000000000000    12.000000000000
+         O            0.000198996252    -0.608283497978     0.000000000000    15.994914619570
+         H           -0.000039222274     1.204225078143     0.926481057168     1.007825032230
+         H           -0.000039222274     1.204225078143    -0.926481057168     1.007825032230
+
+  Nuclear repulsion =   31.085061366825194
+
+  ==> Basis Set <==
+
+  Basis Set: STO-3G
+    Blend: STO-3G
+    Number of shells: 8
+    Number of basis functions: 12
+    Number of Cartesian functions: 12
+    Spherical Harmonics?: true
+    Max angular momentum: 1
+
+  ==> DFJKGrad: Density-Fitted SCF Gradients <==
+
+    Gradient:                    2
+    J tasked:                  Yes
+    K tasked:                  Yes
+    wK tasked:                  No
+    OpenMP threads:              1
+    Integrals threads:           1
+    Memory [MiB]:              375
+    Schwarz Cutoff:          1E-12
+    Fitting Condition:       1E-10
+
+   => Auxiliary Basis Set <=
+
+  Basis Set: (STO-3G AUX)
+    Blend: DEF2-UNIVERSAL-JKFIT
+    Number of shells: 62
+    Number of basis functions: 188
+    Number of Cartesian functions: 222
+    Spherical Harmonics?: true
+    Max angular momentum: 4
+
+  DFHelper Memory: AOs need 0.000 GiB; user supplied 0.439 GiB. 
+  Using in-core AOs.
+
+  ==> MemDFJK: Density-Fitted J/K Matrices <==
+
+    J tasked:                   Yes
+    K tasked:                   Yes
+    wK tasked:                   No
+    OpenMP threads:               1
+    Memory [MiB]:               450
+    Algorithm:                 Core
+    Schwarz Cutoff:           1E-12
+    Mask sparsity (%):       0.0000
+    Fitting Condition:        1E-10
+
+   => Auxiliary Basis Set <=
+
+  Basis Set: (STO-3G AUX)
+    Blend: DEF2-UNIVERSAL-JKFIT
+    Number of shells: 62
+    Number of basis functions: 188
+    Number of Cartesian functions: 222
+    Spherical Harmonics?: true
+    Max angular momentum: 4
+
+
+   ==> Coupled-Perturbed RHF Solver <==
+
+    Maxiter             =         100
+    Convergence         =   1.000E-06
+    Number of equations =          12
+   -----------------------------------------------------
+     Iter   Residual RMS      Max RMS  Remain  Time [s]
+   -----------------------------------------------------
+        1      4.742e-01    7.020e-01      12         0
+        2      1.778e-01    3.810e-01      12         0
+        3      4.744e-02    1.396e-01      12         0
+        4      5.470e-03    1.413e-02      12         0
+        5      1.136e-03    3.757e-03      12         0
+        6      3.375e-04    1.461e-03      12         0
+        7      3.181e-05    1.085e-04      10         0
+        8      7.179e-06    2.652e-05       6         0
+        9      1.346e-06    3.620e-06       4         0
+       10      4.033e-07    9.756e-07       0         0
+  ## Total Hessian (Symmetry 0) ##
+  Irrep: 1 Size: 12 x 12
+
+                 1                   2                   3                   4                   5
+
+    1     0.19734504639418    -0.00021215664559     0.00000000000001    -0.06487709411773     0.00028305599298
+    2    -0.00021215664559     1.40014635105504     0.00000000000756     0.00034673226484    -1.06453081590806
+    3     0.00000000000001     0.00000000000756     0.81077495209706    -0.00000000000001     0.00000000000031
+    4    -0.06487709411773     0.00034673226484    -0.00000000000001     0.02137116654731    -0.00036161860337
+    5     0.00028305599298    -1.06453081590806     0.00000000000031    -0.00036161860337     1.14412020462280
+    6    -0.00000000000001     0.00000000000066    -0.12104521618574    -0.00000000000000    -0.00000000000679
+    7    -0.06623397613950    -0.00006728780958    -0.00007986513202     0.02175296378413     0.00003928130518
+    8    -0.00003544967346    -0.16780776802165    -0.14227100511726     0.00000744316908    -0.03979469378826
+    9    -0.00004168807090    -0.13727772426882    -0.34486486794131    -0.00000175012576    -0.00888722199937
+   10    -0.06623397614469    -0.00006728780963     0.00007986513201     0.02175296378584     0.00003928130523
+   11    -0.00003544967357    -0.16780776779344     0.14227100509332     0.00000744316917    -0.03979469405770
+   12     0.00004168807093     0.13727772417619    -0.34486486793168     0.00000175012573     0.00888722210196
+
+                 6                   7                   8                   9                  10
+
+    1    -0.00000000000001    -0.06623397613950    -0.00003544967346    -0.00004168807090    -0.06623397614469
+    2     0.00000000000066    -0.00006728780958    -0.16780776802165    -0.13727772426882    -0.00006728780963
+    3    -0.12104521618574    -0.00007986513202    -0.14227100511726    -0.34486486794131     0.00007986513201
+    4    -0.00000000000000     0.02175296378413     0.00000744316908    -0.00000175012576     0.02175296378584
+    5    -0.00000000000679     0.00003928130518    -0.03979469378826    -0.00888722199937     0.00003928130523
+    6     0.08620029239599     0.00001498588902    -0.04535626270734     0.01742246189473    -0.00001498588901
+    7     0.00001498588902     0.02225660438837     0.00002502041995     0.00005415871983     0.02222440796800
+    8    -0.04535626270734     0.00002502041995     0.19392239072443     0.16689610698784     0.00000298608442
+    9     0.01742246189473     0.00005415871983     0.16689610698784     0.34202587301650    -0.00001072052317
+   10    -0.00001498588901     0.02222440796800     0.00000298608442    -0.00001072052317     0.02225660439177
+   11     0.04535626271211     0.00000298608443     0.01368007103164    -0.02073116080795     0.00002502041996
+   12     0.01742246189101     0.00001072052317     0.02073116082520    -0.01458346696416    -0.00005415871983
+
+                11                  12
+
+    1    -0.00003544967357     0.00004168807093
+    2    -0.16780776779344     0.13727772417619
+    3     0.14227100509332    -0.34486486793168
+    4     0.00000744316917     0.00000175012573
+    5    -0.03979469405770     0.00888722210196
+    6     0.04535626271211     0.01742246189101
+    7     0.00000298608443     0.00001072052317
+    8     0.01368007103164     0.02073116082520
+    9    -0.02073116080795    -0.01458346696416
+   10     0.00002502041996    -0.00005415871983
+   11     0.19392239076251    -0.16689610701367
+   12    -0.16689610701367     0.34202587301045
+
+
+
+
+*** tstop() called on Hidetoshis-Mac-Studio.local at Sat Jul  8 15:12:34 2023
+Module time:
+	user time   =       0.17 seconds =       0.00 minutes
+	system time =       0.01 seconds =       0.00 minutes
+	total time  =          0 seconds =       0.00 minutes
+Total time:
+	user time   =       1.35 seconds =       0.02 minutes
+	system time =       0.09 seconds =       0.00 minutes
+	total time  =          2 seconds =       0.03 minutes
+
+
+  ==> Harmonic Vibrational Analysis <==
+
+  non-mass-weighted Hessian:       Symmetric? True   Hermitian? True   Lin Dep Dim?  0 (0)
+  projection of translations (True) and rotations (True) removed 6 degrees of freedom (6)
+  total projector:                 Symmetric? True   Hermitian? True   Lin Dep Dim?  6 (6)
+  mass-weighted Hessian:           Symmetric? True   Hermitian? True   Lin Dep Dim?  0 (0)
+  pre-proj  low-frequency mode:    0.0000i [cm^-1]
+  pre-proj  low-frequency mode:    0.0060  [cm^-1]
+  pre-proj  low-frequency mode:    0.0091  [cm^-1]
+  pre-proj  low-frequency mode:   16.7205  [cm^-1]
+  pre-proj  low-frequency mode:   18.5615  [cm^-1]
+  pre-proj  low-frequency mode:   29.0474  [cm^-1]
+  pre-proj  all modes:['0.0023i' '0.0060' '0.0091' '16.7205' '18.5615' '29.0474' '1279.0064'
+ '1397.7021' '1767.2570' '2099.4790' '3497.9509' '3644.8690']
+  projected mass-weighted Hessian: Symmetric? True   Hermitian? True   Lin Dep Dim?  6 (6)
+  post-proj low-frequency mode:    0.0001i [cm^-1] (TR)
+  post-proj low-frequency mode:    0.0000i [cm^-1] (TR)
+  post-proj low-frequency mode:    0.0000i [cm^-1] (TR)
+  post-proj low-frequency mode:    0.0000  [cm^-1] (TR)
+  post-proj low-frequency mode:    0.0000  [cm^-1] (TR)
+  post-proj low-frequency mode:    0.0001  [cm^-1] (TR)
+  post-proj  all modes:['0.0001i' '0.0000i' '0.0000i' '0.0000' '0.0000' '0.0001' '1279.0064'
+ '1397.7020' '1767.2570' '2099.4790' '3497.9509' '3644.8690']
+
+  Vibration                       7                   8                   9           
+  Freq [cm^-1]                1279.0064           1397.7020           1767.2570       
+  Irrep                           Ap                 App                  Ap          
+  Reduced mass [u]              1.3684              1.3449              1.1638        
+  Force const [mDyne/A]         1.3189              1.5480              2.1415        
+  Turning point v=0 [a0]        0.2623              0.2531              0.2419        
+  RMS dev v=0 [a0 u^1/2]        0.2170              0.2075              0.1846        
+  IR activ [km/mol]             6.1539             29.6045              4.1616        
+  Char temp [K]               1840.2054           2010.9820           2542.6894       
+  ----------------------------------------------------------------------------------
+      1   C               -0.17  0.00  0.00    0.00  0.00  0.15   -0.00  0.03 -0.00   
+      2   O                0.04  0.00 -0.00    0.00 -0.00 -0.08    0.00 -0.10  0.00   
+      3   H                0.70 -0.00 -0.00   -0.00  0.64 -0.27   -0.00  0.60 -0.36   
+      4   H                0.70 -0.00  0.00    0.00 -0.64 -0.27   -0.00  0.60  0.36   
+
+  Vibration                       10                  11                  12          
+  Freq [cm^-1]                2099.4790           3497.9509           3644.8690       
+  Irrep                           Ap                  Ap                 App          
+  Reduced mass [u]              5.0451              1.0643              1.1152        
+  Force const [mDyne/A]        13.1021              7.6727              8.7291        
+  Turning point v=0 [a0]        0.1066              0.1798              0.1721        
+  RMS dev v=0 [a0 u^1/2]        0.1693              0.1312              0.1285        
+  IR activ [km/mol]             8.4608              1.8115             19.9550        
+  Char temp [K]               3020.6829           5032.7725           5244.1549       
+  ----------------------------------------------------------------------------------
+      1   C               -0.00  0.47 -0.00   -0.00 -0.07 -0.00    0.00 -0.00 -0.10   
+      2   O                0.00 -0.32  0.00   -0.00  0.01  0.00   -0.00  0.00 -0.00   
+      3   H               -0.00 -0.25  0.52    0.00  0.38  0.59    0.00  0.38  0.59   
+      4   H               -0.00 -0.25 -0.52    0.00  0.38 -0.59   -0.00 -0.38  0.59   
+
+  ==> Thermochemistry Components <==
+
+  Entropy, S
+    Electronic S            0.000 [cal/(mol K)]        0.000 [J/(mol K)]       0.00000000 [mEh/K] (multiplicity = 1)
+    Translational S        36.130 [cal/(mol K)]      151.169 [J/(mol K)]       0.05757719 [mEh/K] (mol. weight = 30.0106 [u], P = 101325.00 [Pa])
+    Rotational S           17.404 [cal/(mol K)]       72.816 [J/(mol K)]       0.02773430 [mEh/K] (symmetry no. = 1)
+    Vibrational S           0.053 [cal/(mol K)]        0.220 [J/(mol K)]       0.00008377 [mEh/K]
+  Total S                  53.586 [cal/(mol K)]      224.205 [J/(mol K)]       0.08539525 [mEh/K]
+  Correction S              0.000 [cal/(mol K)]        0.000 [J/(mol K)]       0.00000000 [mEh/K]
+
+  Constant volume heat capacity, Cv
+    Electronic Cv           0.000 [cal/(mol K)]        0.000 [J/(mol K)]       0.00000000 [mEh/K]
+    Translational Cv        2.981 [cal/(mol K)]       12.472 [J/(mol K)]       0.00475022 [mEh/K]
+    Rotational Cv           2.981 [cal/(mol K)]       12.472 [J/(mol K)]       0.00475022 [mEh/K]
+    Vibrational Cv          0.302 [cal/(mol K)]        1.264 [J/(mol K)]       0.00048135 [mEh/K]
+  Total Cv                  6.264 [cal/(mol K)]       26.207 [J/(mol K)]       0.00998178 [mEh/K]
+  Correction Cv             0.000 [cal/(mol K)]        0.000 [J/(mol K)]       0.00000000 [mEh/K]
+
+  Constant pressure heat capacity, Cp
+    Electronic Cp           0.000 [cal/(mol K)]        0.000 [J/(mol K)]       0.00000000 [mEh/K]
+    Translational Cp        4.968 [cal/(mol K)]       20.786 [J/(mol K)]       0.00791703 [mEh/K]
+    Rotational Cp           2.981 [cal/(mol K)]       12.472 [J/(mol K)]       0.00475022 [mEh/K]
+    Vibrational Cp          0.302 [cal/(mol K)]        1.264 [J/(mol K)]       0.00048135 [mEh/K]
+  Total Cp                  8.251 [cal/(mol K)]       34.522 [J/(mol K)]       0.01314859 [mEh/K]
+  Correction Cp             0.000 [cal/(mol K)]        0.000 [J/(mol K)]       0.00000000 [mEh/K]
+
+  ==> Thermochemistry Energy Analysis <==
+
+  Raw electronic energy, E0
+  Total E0, Electronic energy at well bottom at 0 [K]                 -112.35453143 [Eh]
+
+  Zero-point energy, ZPE_vib = Sum_i nu_i / 2
+    Electronic ZPE          0.000 [kcal/mol]        0.000 [kJ/mol]       0.00000000 [Eh]
+    Translational ZPE       0.000 [kcal/mol]        0.000 [kJ/mol]       0.00000000 [Eh]
+    Rotational ZPE          0.000 [kcal/mol]        0.000 [kJ/mol]       0.00000000 [Eh]
+    Vibrational ZPE        19.565 [kcal/mol]       81.862 [kJ/mol]       0.03117960 [Eh]        6843.132 [cm^-1]
+  Correction ZPE           19.565 [kcal/mol]       81.862 [kJ/mol]       0.03117960 [Eh]        6843.132 [cm^-1]
+  Total ZPE, Electronic energy at 0 [K]                               -112.32335182 [Eh]
+
+  Thermal Energy, E (includes ZPE)
+    Electronic E            0.000 [kcal/mol]        0.000 [kJ/mol]       0.00000000 [Eh]
+    Translational E         0.889 [kcal/mol]        3.718 [kJ/mol]       0.00141628 [Eh]
+    Rotational E            0.889 [kcal/mol]        3.718 [kJ/mol]       0.00141628 [Eh]
+    Vibrational E          19.579 [kcal/mol]       81.919 [kJ/mol]       0.03120127 [Eh]
+  Correction E             21.357 [kcal/mol]       89.356 [kJ/mol]       0.03403382 [Eh]
+  Total E, Electronic energy at  298.15 [K]                           -112.32049760 [Eh]
+
+  Enthalpy, H_trans = E_trans + k_B * T
+    Electronic H            0.000 [kcal/mol]        0.000 [kJ/mol]       0.00000000 [Eh]
+    Translational H         1.481 [kcal/mol]        6.197 [kJ/mol]       0.00236046 [Eh]
+    Rotational H            0.889 [kcal/mol]        3.718 [kJ/mol]       0.00141628 [Eh]
+    Vibrational H          19.579 [kcal/mol]       81.919 [kJ/mol]       0.03120127 [Eh]
+  Correction H             21.949 [kcal/mol]       91.835 [kJ/mol]       0.03497801 [Eh]
+  Total H, Enthalpy at  298.15 [K]                                    -112.31955342 [Eh]
+
+  Gibbs free energy, G = H - T * S
+    Electronic G            0.000 [kcal/mol]        0.000 [kJ/mol]       0.00000000 [Eh]
+    Translational G        -9.291 [kcal/mol]      -38.874 [kJ/mol]      -0.01480618 [Eh]
+    Rotational G           -4.300 [kcal/mol]      -17.992 [kJ/mol]      -0.00685270 [Eh]
+    Vibrational G          19.563 [kcal/mol]       81.853 [kJ/mol]       0.03117630 [Eh]
+  Correction G              5.972 [kcal/mol]       24.988 [kJ/mol]       0.00951741 [Eh]
+  Total G, Free enthalpy at  298.15 [K]                               -112.34501401 [Eh]
+
+
+Properties will be evaluated at   0.000000,   0.000000,   0.000000 [a0]
+OEProp: No title given, name of density matrix used for the following properties is 'SCF density'
+  Mulliken Charges: (a.u.)
+   Center  Symbol    Alpha    Beta     Spin     Total
+       1     C     2.96249  2.96249  0.00000  0.07502
+       2     O     4.09394  4.09394  0.00000 -0.18789
+       3     H     0.47178  0.47178  0.00000  0.05643
+       4     H     0.47178  0.47178  0.00000  0.05643
+
+   Total alpha =  8.00000, Total beta =  8.00000, Total charge =  0.00000
+
