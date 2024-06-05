@@ -18,9 +18,6 @@ This repository is associated with a Japanese book, "Beginning with Computationa
 ## Jupyterノートブックのクラウドサービスでの実行
 本書のコードは下の表にあるボタンをクリックすることで，Googleの無料計算環境であるGoogle Colab上で実行できます（Googleアカウントが必要です）。
 
-> [!CAUTION]
-> 本書執筆時（2023年8月）には下記コードは動作していましたが，2024年2月時点ではPsi4のimport時点でエラーが出るようです。
-
 | |Google Colab |
 |:-|:-|
 |第3章| [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/hidt4/python-compchem-book/blob/main/compchem_book_ch03.ipynb)|
